@@ -1,9 +1,9 @@
 from flask import render_template
-from app import flask_app as app
+from app import flask_app
 
-@app.route('/')
+@flask_app.route('/')
 def index():
     return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    flask_app.run(host="0.0.0.0", port=5000, debug=True)

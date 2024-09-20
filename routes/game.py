@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, request, jsonify
 from flask_login import login_required, current_user
 from models import MathProblem, UserProgress
 from app import db
-from services.openai_service import generate_math_problem
+from services.math_service import generate_math_problem
 
 bp = Blueprint('game', __name__)
 
