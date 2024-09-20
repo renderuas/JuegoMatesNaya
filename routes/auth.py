@@ -23,6 +23,7 @@ def register():
         db.session.add(new_user)
         db.session.commit()
         
+        flash('Registration successful. Please log in.')
         return redirect(url_for('auth.login'))
     
     return render_template('register.html')
@@ -36,6 +37,7 @@ def login():
         user = User.query.filter_by(username=username).first()
         if user and user.check_password(password):
             login_user(user)
+            flash('Logged in successfully.')
             return redirect(url_for('game.play'))
         else:
             flash('Invalid username or password')
@@ -46,4 +48,5 @@ def login():
 @login_required
 def logout():
     logout_user()
+    flash('Logged out successfully.')
     return redirect(url_for('index'))
