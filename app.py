@@ -22,9 +22,9 @@ def create_app():
         from models import User
         db.create_all()
 
-    @login_manager.user_loader
-    def load_user(user_id):
-        return User.query.get(int(user_id))
+        @login_manager.user_loader
+        def load_user(user_id):
+            return User.query.get(int(user_id))
 
     from routes import auth, game, api
     app.register_blueprint(auth.bp)
@@ -32,3 +32,11 @@ def create_app():
     app.register_blueprint(api.bp)
 
     return app
+
+# Create the Flask app instance
+flask_app = create_app()
+
+# Ensure the app context is pushed when running the application
+if __name__ == '__main__':
+    with flask_app.app_context():
+        flask_app.run(host='0.0.0.0', port=5000, debug=True)
