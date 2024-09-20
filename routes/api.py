@@ -1,6 +1,7 @@
 from flask import Blueprint, jsonify
 from flask_login import login_required, current_user
-from models import UserProgress
+from models import UserProgress, User
+from app import db
 
 bp = Blueprint('api', __name__)
 
