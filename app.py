@@ -3,32 +3,30 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from config import Config
 
-db = SQLAlchemy()
-login_manager = LoginManager()
+app = Flask(__name__)
+app.config.from_object(Config)
+
+db = SQLAlchemy(app)
+login_manager = LoginManager(app)
 login_manager.login_view = 'auth.login'
 
-def create_app():
-    app = Flask(__name__)
-    app.config.from_object(Config)
+from models import User
 
-    db.init_app(app)
-    login_manager.init_app(app)
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
 
-    with app.app_context():
-        from models import User
-        db.create_all()
+with app.app_context():
+    db.create_all()
 
-    @login_manager.user_loader
-    def load_user(user_id):
-        return User.query.get(int(user_id))
+from routes import auth, game, api
+app.register_blueprint(auth.bp)
+app.register_blueprint(game.bp)
+app.register_blueprint(api.bp)
 
-    from routes import auth, game, api
-    app.register_blueprint(auth.bp)
-    app.register_blueprint(game.bp)
-    app.register_blueprint(api.bp)
+@app.route('/')
+def index():
+    return render_template('index.html')
 
-    @app.route('/')
-    def index():
-        return render_template('index.html')
-
-    return app
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)

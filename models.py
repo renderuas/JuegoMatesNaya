@@ -1,9 +1,9 @@
-from flask_sqlalchemy import SQLAlchemy
+from app import db
+from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
+from datetime import datetime
 
-db = SQLAlchemy()
-
-class User(db.Model):
+class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(64), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
@@ -28,4 +28,4 @@ class UserProgress(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     problem_id = db.Column(db.Integer, db.ForeignKey('math_problem.id'), nullable=False)
     is_correct = db.Column(db.Boolean, nullable=False)
-    timestamp = db.Column(db.DateTime, nullable=False)
+    timestamp = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
