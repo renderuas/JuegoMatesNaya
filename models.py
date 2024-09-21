@@ -36,3 +36,16 @@ class MultiplayerSession(db.Model):
     player2_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     active = db.Column(db.Boolean, default=True)
+
+class MultiplayerGame(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    session_id = db.Column(db.Integer, db.ForeignKey('multiplayer_session.id'), nullable=False)
+    session = db.relationship('MultiplayerSession', backref='games')
+    player1_score = db.Column(db.Integer, default=0)
+    player2_score = db.Column(db.Integer, default=0)
+    current_problem = db.Column(db.String(256))
+    current_answer = db.Column(db.String(64))
+    difficulty = db.Column(db.Integer, default=1)
+    round_number = db.Column(db.Integer, default=1)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)

@@ -249,3 +249,19 @@ msgstr "¡Ups! No se pudo unir al juego."
 #: templates/multiplayer.html
 msgid "Please check the game code and try again."
 msgstr "Por favor, verifica el código del juego e inténtalo de nuevo."
+
+#: templates/multiplayer_game.html
+msgid "Score:"
+msgstr "Puntuación:"
+
+#: templates/multiplayer_game.html
+msgid "Submit Answer"
+msgstr "Enviar Respuesta"
+
+#: templates/multiplayer_game.html
+msgid "Time left:"
+msgstr "Tiempo restante:"
+
+#: routes/multiplayer.py
+msgid "You are not part of this game session."
+msgstr "No eres parte de esta sesión de juego."
