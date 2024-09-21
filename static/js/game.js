@@ -14,6 +14,7 @@ function getProblem() {
         document.getElementById('problem').textContent = data.question;
         document.getElementById('answer').value = '';
         document.getElementById('feedback').textContent = '';
+        document.getElementById('next-btn').style.display = 'none';
     });
 }
 
@@ -34,21 +35,26 @@ function checkAnswer() {
     .then(data => {
         const feedbackElement = document.getElementById('feedback');
         if (data.correct) {
-            feedbackElement.textContent = 'Correct! ' + data.explanation;
+            feedbackElement.textContent = '¡Muy bien! ' + data.explanation;
             feedbackElement.className = 'feedback correct';
         } else {
-            feedbackElement.textContent = 'Incorrect. ' + data.explanation;
+            feedbackElement.textContent = '¡Ups! ' + data.explanation + ' ¡Inténtalo de nuevo!';
             feedbackElement.className = 'feedback incorrect';
         }
-        document.getElementById('score').textContent = 'Score: ' + data.score;
+        document.getElementById('score').textContent = 'Tu puntuación: ' + data.score;
         
-        // Get next problem after a short delay
-        setTimeout(getProblem, 3000);
+        // Show the "Next" button
+        document.getElementById('next-btn').style.display = 'inline-block';
     });
+}
+
+function nextProblem() {
+    getProblem();
 }
 
 // Initialize the game
 document.addEventListener('DOMContentLoaded', function() {
     getProblem();
     document.getElementById('submit-btn').addEventListener('click', checkAnswer);
+    document.getElementById('next-btn').addEventListener('click', nextProblem);
 });

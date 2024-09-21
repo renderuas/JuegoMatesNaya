@@ -6,6 +6,7 @@
     <div id="problem" class="problem"></div>
     <input type="text" id="answer" class="answer-input" placeholder="{{ _('Type your answer here') }}">
     <button id="submit-btn" class="submit-btn">{{ _('Check My Answer') }}</button>
+    <button id="next-btn" class="next-btn" style="display: none;">{{ _('Next Problem') }}</button>
     <div id="feedback" class="feedback"></div>
     <div id="score" class="score">{{ _('Your Score: 0') }}</div>
 </div>
@@ -27,6 +28,7 @@ function getProblem() {
         document.getElementById('problem').textContent = data.question;
         document.getElementById('answer').value = '';
         document.getElementById('feedback').textContent = '';
+        document.getElementById('next-btn').style.display = 'none';
     });
 }
 
@@ -47,23 +49,29 @@ function checkAnswer() {
     .then(data => {
         const feedbackElement = document.getElementById('feedback');
         if (data.correct) {
-            feedbackElement.textContent = '{{ _("Yay!") }} ' + data.explanation;
+            feedbackElement.textContent = '{{ _("¡Muy bien!") }} ' + data.explanation;
             feedbackElement.className = 'feedback correct';
         } else {
-            feedbackElement.textContent = '{{ _("Oops!") }} ' + data.explanation + ' {{ _("Try again!") }}';
+            feedbackElement.textContent = '{{ _("¡Ups!") }} ' + data.explanation + ' {{ _("¡Inténtalo de nuevo!") }}';
             feedbackElement.className = 'feedback incorrect';
         }
-        document.getElementById('score').textContent = '{{ _("Your Score:") }} ' + data.score;
+        document.getElementById('score').textContent = '{{ _("Tu puntuación:") }} ' + data.score;
         
-        // Get next problem after a short delay
-        setTimeout(getProblem, 3000);
+        // Show the "Next" button
+        document.getElementById('next-btn').style.display = 'inline-block';
     });
+}
+
+function nextProblem() {
+    getProblem();
+    document.getElementById('next-btn').style.display = 'none';
 }
 
 // Initialize the game
 document.addEventListener('DOMContentLoaded', function() {
     getProblem();
     document.getElementById('submit-btn').addEventListener('click', checkAnswer);
+    document.getElementById('next-btn').addEventListener('click', nextProblem);
 });
 </script>
 {% endblock %}

@@ -58,6 +58,10 @@ msgstr "Escribe tu respuesta aquí"
 msgid "Check My Answer"
 msgstr "Comprobar Mi Respuesta"
 
+#: templates/game.html:9
+msgid "Next Problem"
+msgstr "Siguiente Problema"
+
 #: templates/game.html:10
 msgid "Your Score: 0"
 msgstr "Tu Puntuación: 0"
@@ -169,3 +173,19 @@ msgstr "¡Fantástico! Cuando multiplicamos %(num1)s por %(num2)s, obtenemos %(a
 #: services/math_service.py
 msgid "Amazing! When we split %(num1)s into %(num2)s equal groups, we get %(answer)s in each group. You're really good at this!"
 msgstr "¡Asombroso! Cuando dividimos %(num1)s en %(num2)s grupos iguales, obtenemos %(answer)s en cada grupo. ¡Eres muy bueno en esto!"
+
+#: templates/game.html
+msgid "¡Muy bien!"
+msgstr "¡Muy bien!"
+
+#: templates/game.html
+msgid "¡Ups!"
+msgstr "¡Ups!"
+
+#: templates/game.html
+msgid "¡Inténtalo de nuevo!"
+msgstr "¡Inténtalo de nuevo!"
+
+#: templates/game.html
+msgid "Tu puntuación:"
+msgstr "Tu puntuación:"
