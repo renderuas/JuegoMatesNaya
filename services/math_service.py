@@ -5,7 +5,7 @@ def generate_math_problem(difficulty):
     if difficulty == 1:
         num1 = random.randint(1, 10)
         num2 = random.randint(1, 10)
-        operator = random.choice(['plus', 'minus'])
+        operator = random.choice(['plus', 'minus', 'times'])
     elif difficulty == 2:
         num1 = random.randint(1, 20)
         num2 = random.randint(1, 20)
