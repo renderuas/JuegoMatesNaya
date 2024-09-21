@@ -16,9 +16,6 @@ from models import User
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-with app.app_context():
-    db.create_all()
-
 from routes import auth, game, api
 app.register_blueprint(auth.bp)
 app.register_blueprint(game.bp)
@@ -29,10 +26,8 @@ def index():
     return render_template('index.html')
 
 with app.app_context():
-    db.create_all()
-    # This will create new tables if they don't exist, but won't modify existing ones
-    # For the password_hash change to take effect, you might need to drop and recreate the user table
-    # or use a migration tool like Alembic for production environments
+    db.drop_all()  # This will drop all existing tables
+    db.create_all()  # This will recreate all tables with the updated schema
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
