@@ -17,23 +17,28 @@ def generate_math_problem(difficulty):
 
     if operator == 'plus':
         answer = num1 + num2
-        question = _("What is %(num1)s plus %(num2)s?") % {'num1': num1, 'num2': num2}
+        text_question = _("What is %(num1)s plus %(num2)s?") % {'num1': num1, 'num2': num2}
+        numerical_question = f"{num1} + {num2} = ?"
     elif operator == 'minus':
         # Ensure the result is positive
         num1, num2 = max(num1, num2), min(num1, num2)
         answer = num1 - num2
-        question = _("What is %(num1)s minus %(num2)s?") % {'num1': num1, 'num2': num2}
+        text_question = _("What is %(num1)s minus %(num2)s?") % {'num1': num1, 'num2': num2}
+        numerical_question = f"{num1} - {num2} = ?"
     elif operator == 'times':
         answer = num1 * num2
-        question = _("What is %(num1)s times %(num2)s?") % {'num1': num1, 'num2': num2}
+        text_question = _("What is %(num1)s times %(num2)s?") % {'num1': num1, 'num2': num2}
+        numerical_question = f"{num1} × {num2} = ?"
     else:  # division
         # Ensure the division results in a whole number
         answer = random.randint(1, 10)
         num1 = num2 * answer
-        question = _("What is %(num1)s divided by %(num2)s?") % {'num1': num1, 'num2': num2}
+        text_question = _("What is %(num1)s divided by %(num2)s?") % {'num1': num1, 'num2': num2}
+        numerical_question = f"{num1} ÷ {num2} = ?"
 
     return {
-        'question': question,
+        'text_question': text_question,
+        'numerical_question': numerical_question,
         'answer': str(answer),
         'explanation': get_explanation(num1, num2, operator, answer)
     }
