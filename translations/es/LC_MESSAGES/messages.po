@@ -1,0 +1,140 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-09-21 10:30+0000\n"
+"PO-Revision-Date: 2024-09-21 10:30+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: templates/base.html:6
+msgid "Fun Math Game for Kids"
+msgstr "Juego Divertido de Matemáticas para Niños"
+
+#: templates/base.html:13
+msgid "Home"
+msgstr "Inicio"
+
+#: templates/base.html:15
+msgid "Play Game"
+msgstr "Jugar"
+
+#: templates/base.html:16
+msgid "Bye Bye"
+msgstr "Adiós"
+
+#: templates/base.html:18
+msgid "Come In"
+msgstr "Entrar"
+
+#: templates/base.html:19
+msgid "Join Us"
+msgstr "Únete"
+
+#: templates/base.html:30
+msgid "Fun Math Game for Kids"
+msgstr "Juego Divertido de Matemáticas para Niños"
+
+#: templates/game.html:5
+msgid "Fun Math Game"
+msgstr "Juego Divertido de Matemáticas"
+
+#: templates/game.html:7
+msgid "Type your answer here"
+msgstr "Escribe tu respuesta aquí"
+
+#: templates/game.html:8
+msgid "Check My Answer"
+msgstr "Comprobar Mi Respuesta"
+
+#: templates/game.html:10
+msgid "Your Score: 0"
+msgstr "Tu Puntuación: 0"
+
+#: templates/index.html:4
+msgid "Welcome to Math Game for Kids!"
+msgstr "¡Bienvenido al Juego de Matemáticas para Niños!"
+
+#: templates/index.html:6
+msgid "Improve your math skills while having fun!"
+msgstr "¡Mejora tus habilidades matemáticas mientras te diviertes!"
+
+#: templates/index.html:9
+msgid "Start Playing"
+msgstr "Empezar a Jugar"
+
+#: templates/login.html:4
+msgid "Welcome Back, Math Star!"
+msgstr "¡Bienvenido de Nuevo, Estrella Matemática!"
+
+#: templates/login.html:7
+msgid "Your Superhero Name:"
+msgstr "Tu Nombre de Superhéroe:"
+
+#: templates/login.html:11
+msgid "Secret Code:"
+msgstr "Código Secreto:"
+
+#: templates/login.html:14
+msgid "Let's Go!"
+msgstr "¡Vamos!"
+
+#: templates/login.html:16
+msgid "New here? Join the Math Adventure!"
+msgstr "¿Eres nuevo? ¡Únete a la Aventura Matemática!"
+
+#: templates/register.html:4
+msgid "Join the Math Adventure!"
+msgstr "¡Únete a la Aventura Matemática!"
+
+#: templates/register.html:7
+msgid "Choose Your Superhero Name:"
+msgstr "Elige Tu Nombre de Superhéroe:"
+
+#: templates/register.html:11
+msgid "Your Parent's Email:"
+msgstr "Correo Electrónico de tus Padres:"
+
+#: templates/register.html:15
+msgid "Create a Secret Code:"
+msgstr "Crea un Código Secreto:"
+
+#: templates/register.html:18
+msgid "Start My Adventure!"
+msgstr "¡Iniciar Mi Aventura!"
+
+#: templates/register.html:20
+msgid "Already a Math Star? Come on in!"
+msgstr "¿Ya eres una Estrella Matemática? ¡Entra aquí!"
+
+#: routes/auth.py:18
+msgid "Oops! That superhero name is already taken. Try another one!"
+msgstr "¡Ups! Ese nombre de superhéroe ya está ocupado. ¡Intenta con otro!"
+
+#: routes/auth.py:26
+msgid "Yay! You're now part of our Math Adventure. Let's play!"
+msgstr "¡Genial! Ahora eres parte de nuestra Aventura Matemática. ¡Vamos a jugar!"
+
+#: routes/auth.py:40
+msgid "Welcome back, Math Star! Ready for some fun?"
+msgstr "¡Bienvenido de nuevo, Estrella Matemática! ¿Listo para divertirte?"
+
+#: routes/auth.py:43
+msgid "Oops! Your superhero name or secret code is not right. Try again!"
+msgstr "¡Ups! Tu nombre de superhéroe o código secreto no es correcto. ¡Inténtalo de nuevo!"
+
+#: routes/auth.py:51
+msgid "See you next time, Math Star!"
+msgstr "¡Hasta la próxima, Estrella Matemática!"
+

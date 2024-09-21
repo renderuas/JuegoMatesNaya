@@ -2,12 +2,12 @@
 
 {% block content %}
 <div class="game-container">
-    <h2>Fun Math Game</h2>
+    <h2>{{ _('Fun Math Game') }}</h2>
     <div id="problem" class="problem"></div>
-    <input type="text" id="answer" class="answer-input" placeholder="Type your answer here">
-    <button id="submit-btn" class="submit-btn">Check My Answer</button>
+    <input type="text" id="answer" class="answer-input" placeholder="{{ _('Type your answer here') }}">
+    <button id="submit-btn" class="submit-btn">{{ _('Check My Answer') }}</button>
     <div id="feedback" class="feedback"></div>
-    <div id="score" class="score">Your Score: 0</div>
+    <div id="score" class="score">{{ _('Your Score: 0') }}</div>
 </div>
 
 <script>
@@ -47,13 +47,13 @@ function checkAnswer() {
     .then(data => {
         const feedbackElement = document.getElementById('feedback');
         if (data.correct) {
-            feedbackElement.textContent = 'Yay! ' + data.explanation;
+            feedbackElement.textContent = '{{ _("Yay!") }} ' + data.explanation;
             feedbackElement.className = 'feedback correct';
         } else {
-            feedbackElement.textContent = 'Oops! ' + data.explanation + ' Try again!';
+            feedbackElement.textContent = '{{ _("Oops!") }} ' + data.explanation + ' {{ _("Try again!") }}';
             feedbackElement.className = 'feedback incorrect';
         }
-        document.getElementById('score').textContent = 'Your Score: ' + data.score;
+        document.getElementById('score').textContent = '{{ _("Your Score:") }} ' + data.score;
         
         // Get next problem after a short delay
         setTimeout(getProblem, 3000);
