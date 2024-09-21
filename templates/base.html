@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Game for Kids</title>
+    <title>Fun Math Game for Kids</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -12,11 +12,11 @@
             <ul>
                 <li><a href="{{ url_for('index') }}">Home</a></li>
                 {% if current_user.is_authenticated %}
-                    <li><a href="{{ url_for('game.play') }}">Play</a></li>
-                    <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
+                    <li><a href="{{ url_for('game.play') }}">Play Game</a></li>
+                    <li><a href="{{ url_for('auth.logout') }}">Bye Bye</a></li>
                 {% else %}
-                    <li><a href="{{ url_for('auth.login') }}">Login</a></li>
-                    <li><a href="{{ url_for('auth.register') }}">Register</a></li>
+                    <li><a href="{{ url_for('auth.login') }}">Come In</a></li>
+                    <li><a href="{{ url_for('auth.register') }}">Join Us</a></li>
                 {% endif %}
             </ul>
         </nav>
@@ -27,7 +27,7 @@
     </main>
     
     <footer>
-        <p>&copy; 2023 Math Game for Kids</p>
+        <p>&copy; 2024 Fun Math Game for Kids</p>
     </footer>
 </body>
 </html>

@@ -15,7 +15,7 @@ def register():
         
         user = User.query.filter_by(username=username).first()
         if user:
-            flash('Username already exists')
+            flash('Oops! That superhero name is already taken. Try another one!')
             return redirect(url_for('auth.register'))
         
         new_user = User(username=username, email=email)
@@ -23,7 +23,7 @@ def register():
         db.session.add(new_user)
         db.session.commit()
         
-        flash('Registration successful. Please log in.')
+        flash('Yay! You\'re now part of our Math Adventure. Let\'s play!')
         return redirect(url_for('auth.login'))
     
     return render_template('register.html')
@@ -37,10 +37,10 @@ def login():
         user = User.query.filter_by(username=username).first()
         if user and user.check_password(password):
             login_user(user)
-            flash('Logged in successfully.')
+            flash('Welcome back, Math Star! Ready for some fun?')
             return redirect(url_for('game.play'))
         else:
-            flash('Invalid username or password')
+            flash('Oops! Your superhero name or secret code is not right. Try again!')
     
     return render_template('login.html')
 
@@ -48,5 +48,5 @@ def login():
 @login_required
 def logout():
     logout_user()
-    flash('Logged out successfully.')
+    flash('See you next time, Math Star!')
     return redirect(url_for('index'))
