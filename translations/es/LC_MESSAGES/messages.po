@@ -19,15 +19,15 @@ msgstr ""
 "Generated-By: Babel 2.12.1\n"
 
 #: templates/base.html:6
-msgid "Fun Math Game for Kids"
-msgstr "Juego Divertido de Matemáticas para Niños"
+msgid "Math Adventure for Kids"
+msgstr "Aventura Matemática para Niños"
 
 #: templates/base.html:13
 msgid "Home"
 msgstr "Inicio"
 
 #: templates/base.html:15
-msgid "Play Game"
+msgid "Play"
 msgstr "Jugar"
 
 #: templates/base.html:16
@@ -35,44 +35,56 @@ msgid "Multiplayer"
 msgstr "Multijugador"
 
 #: templates/base.html:17
-msgid "Bye Bye"
-msgstr "Adiós"
+msgid "Dashboard"
+msgstr "Panel"
 
-#: templates/base.html:19
-msgid "Come In"
-msgstr "Entrar"
+#: templates/base.html:18
+msgid "Logout"
+msgstr "Salir"
 
 #: templates/base.html:20
-msgid "Join Us"
-msgstr "Únete"
+msgid "Login"
+msgstr "Entrar"
 
-#: templates/base.html:31
-msgid "Fun Math Game for Kids"
-msgstr "Juego Divertido de Matemáticas para Niños"
+#: templates/base.html:21
+msgid "Register"
+msgstr "Registrarse"
 
 #: templates/game.html:5
-msgid "Fun Math Game"
-msgstr "Juego Divertido de Matemáticas"
+msgid "Math Adventure"
+msgstr "Aventura Matemática"
 
-#: templates/game.html:7
+#: templates/game.html:10
 msgid "Type your answer here"
 msgstr "Escribe tu respuesta aquí"
 
-#: templates/game.html:8
+#: templates/game.html:11
 msgid "Check My Answer"
 msgstr "Comprobar Mi Respuesta"
 
-#: templates/game.html:9
+#: templates/game.html:12
 msgid "Next Problem"
 msgstr "Siguiente Problema"
 
-#: templates/game.html:11
-msgid "Your Score: 0"
-msgstr "Tu Puntuación: 0"
+#: templates/game.html:14
+msgid "Your Score:"
+msgstr "Tu Puntuación:"
+
+#: templates/game.html:52
+msgid "Awesome!"
+msgstr "¡Genial!"
+
+#: templates/game.html:55
+msgid "Oops!"
+msgstr "¡Ups!"
+
+#: templates/game.html:55
+msgid "Let's try again!"
+msgstr "¡Intentémoslo de nuevo!"
 
 #: templates/index.html:4
-msgid "Welcome to Math Game for Kids!"
-msgstr "¡Bienvenido al Juego de Matemáticas para Niños!"
+msgid "Welcome to Math Adventure for Kids!"
+msgstr "¡Bienvenido a la Aventura Matemática para Niños!"
 
 #: templates/index.html:6
 msgid "Improve your math skills while having fun!"
@@ -178,22 +190,6 @@ msgstr "¡Fantástico! Cuando multiplicamos %(num1)s por %(num2)s, obtenemos %(a
 msgid "Amazing! When we split %(num1)s into %(num2)s equal groups, we get %(answer)s in each group. You're really good at this!"
 msgstr "¡Asombroso! Cuando dividimos %(num1)s en %(num2)s grupos iguales, obtenemos %(answer)s en cada grupo. ¡Eres muy bueno en esto!"
 
-#: templates/game.html
-msgid "¡Muy bien!"
-msgstr "¡Muy bien!"
-
-#: templates/game.html
-msgid "¡Ups!"
-msgstr "¡Ups!"
-
-#: templates/game.html
-msgid "¡Inténtalo de nuevo!"
-msgstr "¡Inténtalo de nuevo!"
-
-#: templates/game.html
-msgid "Tu puntuación:"
-msgstr "Tu puntuación:"
-
 #: templates/multiplayer.html
 msgid "Multiplayer Math Challenge"
 msgstr "Desafío Matemático Multijugador"
@@ -266,7 +262,6 @@ msgstr "Tiempo restante:"
 msgid "You are not part of this game session."
 msgstr "No eres parte de esta sesión de juego."
 
-# New translations for the dashboard
 msgid "Progress Dashboard"
 msgstr "Panel de Progreso"
 
@@ -302,6 +297,3 @@ msgstr "Correcto"
 
 msgid "Incorrect"
 msgstr "Incorrecto"
-
-msgid "Dashboard"
-msgstr "Panel de Control"

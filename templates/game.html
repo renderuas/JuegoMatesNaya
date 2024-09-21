@@ -2,16 +2,16 @@
 
 {% block content %}
 <div class="game-container">
-    <h2>{{ _('Fun Math Game') }}</h2>
+    <h2>{{ _('Math Adventure') }} 🚀</h2>
     <div id="problem" class="problem">
         <p id="text-question"></p>
         <p id="numerical-question"></p>
     </div>
     <input type="text" id="answer" class="answer-input" placeholder="{{ _('Type your answer here') }}">
-    <button id="submit-btn" class="submit-btn">{{ _('Check My Answer') }}</button>
-    <button id="next-btn" class="next-btn" style="display: none;">{{ _('Next Problem') }}</button>
+    <button id="submit-btn" class="submit-btn">{{ _('Check My Answer') }} 🧮</button>
+    <button id="next-btn" class="next-btn" style="display: none;">{{ _('Next Problem') }} ➡️</button>
     <div id="feedback" class="feedback"></div>
-    <div id="score" class="score">{{ _('Your Score: 0') }}</div>
+    <div id="score" class="score">{{ _('Your Score:') }} <span id="score-value">0</span> 🏆</div>
 </div>
 
 <script>
@@ -53,13 +53,13 @@ function checkAnswer() {
     .then(data => {
         const feedbackElement = document.getElementById('feedback');
         if (data.correct) {
-            feedbackElement.textContent = '{{ _("¡Muy bien!") }} ' + data.explanation;
-            feedbackElement.className = 'feedback correct';
+            feedbackElement.textContent = '{{ _("Awesome!") }} 🎉 ' + data.explanation;
+            feedbackElement.className = 'feedback correct celebrate';
         } else {
-            feedbackElement.textContent = '{{ _("¡Ups!") }} ' + data.explanation + ' {{ _("¡Inténtalo de nuevo!") }}';
+            feedbackElement.textContent = '{{ _("Oops!") }} 😕 ' + data.explanation + ' {{ _("Let\'s try again!") }}';
             feedbackElement.className = 'feedback incorrect';
         }
-        document.getElementById('score').textContent = '{{ _("Tu puntuación:") }} ' + data.score;
+        document.getElementById('score-value').textContent = data.score;
         
         // Show the "Next" button
         document.getElementById('next-btn').style.display = 'inline-block';

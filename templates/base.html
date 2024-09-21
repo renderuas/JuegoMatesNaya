@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ _('Fun Math Game for Kids') }}</title>
+    <title>{{ _('Math Adventure for Kids') }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="{{ url_for('index') }}">{{ _('Home') }}</a></li>
+                <li><a href="{{ url_for('index') }}">{{ _('Home') }} 🏠</a></li>
                 {% if current_user.is_authenticated %}
-                    <li><a href="{{ url_for('game.play') }}">{{ _('Play Game') }}</a></li>
-                    <li><a href="{{ url_for('multiplayer.multiplayer') }}">{{ _('Multiplayer') }}</a></li>
-                    <li><a href="{{ url_for('dashboard.dashboard') }}">{{ _('Dashboard') }}</a></li>
-                    <li><a href="{{ url_for('auth.logout') }}">{{ _('Bye Bye') }}</a></li>
+                    <li><a href="{{ url_for('game.play') }}">{{ _('Play') }} 🎮</a></li>
+                    <li><a href="{{ url_for('multiplayer.multiplayer') }}">{{ _('Multiplayer') }} 👥</a></li>
+                    <li><a href="{{ url_for('dashboard.dashboard') }}">{{ _('Dashboard') }} 📊</a></li>
+                    <li><a href="{{ url_for('auth.logout') }}">{{ _('Logout') }} 👋</a></li>
                 {% else %}
-                    <li><a href="{{ url_for('auth.login') }}">{{ _('Come In') }}</a></li>
-                    <li><a href="{{ url_for('auth.register') }}">{{ _('Join Us') }}</a></li>
+                    <li><a href="{{ url_for('auth.login') }}">{{ _('Login') }} 🚀</a></li>
+                    <li><a href="{{ url_for('auth.register') }}">{{ _('Register') }} 📝</a></li>
                 {% endif %}
             </ul>
         </nav>
@@ -29,7 +31,7 @@
     </main>
     
     <footer>
-        <p>&copy; 2024 {{ _('Fun Math Game for Kids') }}</p>
+        <p>&copy; 2024 {{ _('Math Adventure for Kids') }} 🧮🚀</p>
     </footer>
 </body>
 </html>
