@@ -4,6 +4,7 @@ from urllib.parse import urlparse
 from flask_babel import _
 from app import db
 from models import User
+import logging
 
 bp = Blueprint('auth', __name__)
 
@@ -41,7 +42,7 @@ def login():
             next_page = request.args.get('next')
             if not next_page or urlparse(next_page).netloc != '':
                 next_page = url_for('game.play')
-            print(f"Debug: Redirecting to {next_page}")  # Add debug print
+            logging.debug(f"Redirecting to: {next_page}")  # Add debug logging
             return redirect(next_page)
         else:
             flash(_('Oops! Your superhero name or secret code is not right. Try again!'))

@@ -3,12 +3,14 @@ from flask_login import login_required, current_user
 from app import db
 from models import MathProblem, UserProgress
 from services.math_service import generate_math_problem
+import logging
 
 bp = Blueprint('game', __name__)
 
 @bp.route('/play')
 @login_required
 def play():
+    logging.debug(f"User {current_user.username} accessed /play route")  # Add debug logging
     return render_template('game.html')
 
 @bp.route('/get_problem', methods=['POST'])
