@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="multiplayer-container">
+    <h2>{{ _('Multiplayer Math Game') }}</h2>
+    <div class="session-options">
+        <button id="create-session-btn">{{ _('Create New Session') }}</button>
+        <div id="join-session">
+            <input type="text" id="session-id-input" placeholder="{{ _('Enter Session ID') }}">
+            <button id="join-session-btn">{{ _('Join Session') }}</button>
+        </div>
+    </div>
+    <div id="session-info"></div>
+</div>
+
+<script>
+document.getElementById('create-session-btn').addEventListener('click', function() {
+    fetch('/create_session', { method: 'POST' })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('session-info').textContent = `{{ _('Session created! ID:') }} ${data.session_id}`;
+        });
+});
+
+document.getElementById('join-session-btn').addEventListener('click', function() {
+    const sessionId = document.getElementById('session-id-input').value;
+    fetch('/join_session', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ session_id: sessionId }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            document.getElementById('session-info').textContent = `{{ _('Joined session:') }} ${data.session_id}`;
+        } else {
+            document.getElementById('session-info').textContent = data.message;
+        }
+    });
+});
+</script>
+{% endblock %}

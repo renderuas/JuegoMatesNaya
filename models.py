@@ -29,3 +29,10 @@ class UserProgress(db.Model):
     problem_id = db.Column(db.Integer, db.ForeignKey('math_problem.id'), nullable=False)
     is_correct = db.Column(db.Boolean, nullable=False)
     timestamp = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+
+class MultiplayerSession(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    creator_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    player2_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    active = db.Column(db.Boolean, default=True)
