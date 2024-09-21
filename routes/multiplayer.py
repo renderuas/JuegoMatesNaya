@@ -10,7 +10,7 @@ bp = Blueprint('multiplayer', __name__)
 def multiplayer():
     return render_template('multiplayer.html')
 
-@bp.route('/create_session', methods=['POST'])
+@bp.route('/multiplayer/create_session', methods=['POST'])
 @login_required
 def create_session():
     new_session = MultiplayerSession(creator_id=current_user.id)

@@ -31,18 +31,22 @@ msgid "Play Game"
 msgstr "Jugar"
 
 #: templates/base.html:16
+msgid "Multiplayer"
+msgstr "Multijugador"
+
+#: templates/base.html:17
 msgid "Bye Bye"
 msgstr "Adiós"
 
-#: templates/base.html:18
+#: templates/base.html:19
 msgid "Come In"
 msgstr "Entrar"
 
-#: templates/base.html:19
+#: templates/base.html:20
 msgid "Join Us"
 msgstr "Únete"
 
-#: templates/base.html:30
+#: templates/base.html:31
 msgid "Fun Math Game for Kids"
 msgstr "Juego Divertido de Matemáticas para Niños"
 
@@ -62,7 +66,7 @@ msgstr "Comprobar Mi Respuesta"
 msgid "Next Problem"
 msgstr "Siguiente Problema"
 
-#: templates/game.html:10
+#: templates/game.html:11
 msgid "Your Score: 0"
 msgstr "Tu Puntuación: 0"
 
@@ -189,3 +193,27 @@ msgstr "¡Inténtalo de nuevo!"
 #: templates/game.html
 msgid "Tu puntuación:"
 msgstr "Tu puntuación:"
+
+#: templates/multiplayer.html
+msgid "Multiplayer Math Game"
+msgstr "Juego de Matemáticas Multijugador"
+
+#: templates/multiplayer.html
+msgid "Create New Session"
+msgstr "Crear Nueva Sesión"
+
+#: templates/multiplayer.html
+msgid "Enter Session ID"
+msgstr "Ingresa el ID de la Sesión"
+
+#: templates/multiplayer.html
+msgid "Join Session"
+msgstr "Unirse a la Sesión"
+
+#: templates/multiplayer.html
+msgid "Session created! ID:"
+msgstr "¡Sesión creada! ID:"
+
+#: templates/multiplayer.html
+msgid "Joined session:"
+msgstr "Unido a la sesión:"
