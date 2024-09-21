@@ -138,3 +138,34 @@ msgstr "¡Ups! Tu nombre de superhéroe o código secreto no es correcto. ¡Int�
 msgid "See you next time, Math Star!"
 msgstr "¡Hasta la próxima, Estrella Matemática!"
 
+#: services/math_service.py
+msgid "What is %(num1)s plus %(num2)s?"
+msgstr "¿Cuánto es %(num1)s más %(num2)s?"
+
+#: services/math_service.py
+msgid "What is %(num1)s minus %(num2)s?"
+msgstr "¿Cuánto es %(num1)s menos %(num2)s?"
+
+#: services/math_service.py
+msgid "What is %(num1)s times %(num2)s?"
+msgstr "¿Cuánto es %(num1)s por %(num2)s?"
+
+#: services/math_service.py
+msgid "What is %(num1)s divided by %(num2)s?"
+msgstr "¿Cuánto es %(num1)s dividido entre %(num2)s?"
+
+#: services/math_service.py
+msgid "Great job! When we add %(num1)s and %(num2)s together, we get %(answer)s. Keep up the good work!"
+msgstr "¡Excelente trabajo! Cuando sumamos %(num1)s y %(num2)s, obtenemos %(answer)s. ¡Sigue así!"
+
+#: services/math_service.py
+msgid "Awesome! When we take away %(num2)s from %(num1)s, we're left with %(answer)s. You're doing great!"
+msgstr "¡Impresionante! Cuando restamos %(num2)s de %(num1)s, nos queda %(answer)s. ¡Lo estás haciendo muy bien!"
+
+#: services/math_service.py
+msgid "Fantastic! When we multiply %(num1)s by %(num2)s, we get %(answer)s. You're becoming a math superstar!"
+msgstr "¡Fantástico! Cuando multiplicamos %(num1)s por %(num2)s, obtenemos %(answer)s. ¡Te estás convirtiendo en una superestrella de las matemáticas!"
+
+#: services/math_service.py
+msgid "Amazing! When we split %(num1)s into %(num2)s equal groups, we get %(answer)s in each group. You're really good at this!"
+msgstr "¡Asombroso! Cuando dividimos %(num1)s en %(num2)s grupos iguales, obtenemos %(answer)s en cada grupo. ¡Eres muy bueno en esto!"
