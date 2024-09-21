@@ -195,25 +195,57 @@ msgid "Tu puntuación:"
 msgstr "Tu puntuación:"
 
 #: templates/multiplayer.html
-msgid "Multiplayer Math Game"
-msgstr "Juego de Matemáticas Multijugador"
+msgid "Multiplayer Math Challenge"
+msgstr "Desafío Matemático Multijugador"
 
 #: templates/multiplayer.html
-msgid "Create New Session"
-msgstr "Crear Nueva Sesión"
+msgid "Play with a friend and see who can solve math problems faster!"
+msgstr "¡Juega con un amigo y vean quién puede resolver problemas matemáticos más rápido!"
 
 #: templates/multiplayer.html
-msgid "Enter Session ID"
-msgstr "Ingresa el ID de la Sesión"
+msgid "Create a New Game"
+msgstr "Crear un Nuevo Juego"
 
 #: templates/multiplayer.html
-msgid "Join Session"
-msgstr "Unirse a la Sesión"
+msgid "Start a new game and invite a friend to join you."
+msgstr "Inicia un nuevo juego e invita a un amigo a unirse."
 
 #: templates/multiplayer.html
-msgid "Session created! ID:"
-msgstr "¡Sesión creada! ID:"
+msgid "Join a Game"
+msgstr "Unirse a un Juego"
 
 #: templates/multiplayer.html
-msgid "Joined session:"
-msgstr "Unido a la sesión:"
+msgid "Enter the game code your friend gave you to join their game."
+msgstr "Ingresa el código de juego que te dio tu amigo para unirte a su juego."
+
+#: templates/multiplayer.html
+msgid "Enter Game Code"
+msgstr "Ingresa el Código del Juego"
+
+#: templates/multiplayer.html
+msgid "New game created!"
+msgstr "¡Nuevo juego creado!"
+
+#: templates/multiplayer.html
+msgid "Your game code is:"
+msgstr "Tu código de juego es:"
+
+#: templates/multiplayer.html
+msgid "Share this code with your friend so they can join your game."
+msgstr "Comparte este código con tu amigo para que pueda unirse a tu juego."
+
+#: templates/multiplayer.html
+msgid "You have joined the game!"
+msgstr "¡Te has unido al juego!"
+
+#: templates/multiplayer.html
+msgid "Get ready to play!"
+msgstr "¡Prepárate para jugar!"
+
+#: templates/multiplayer.html
+msgid "Oops! Could not join the game."
+msgstr "¡Ups! No se pudo unir al juego."
+
+#: templates/multiplayer.html
+msgid "Please check the game code and try again."
+msgstr "Por favor, verifica el código del juego e inténtalo de nuevo."

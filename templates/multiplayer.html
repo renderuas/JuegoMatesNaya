@@ -2,15 +2,31 @@
 
 {% block content %}
 <div class="multiplayer-container">
-    <h2>{{ _('Multiplayer Math Game') }}</h2>
-    <div class="session-options">
-        <button id="create-session-btn">{{ _('Create New Session') }}</button>
-        <div id="join-session">
-            <input type="text" id="session-id-input" placeholder="{{ _('Enter Session ID') }}">
-            <button id="join-session-btn">{{ _('Join Session') }}</button>
+    <h2>{{ _('Multiplayer Math Challenge') }}</h2>
+    <p class="intro">{{ _('Play with a friend and see who can solve math problems faster!') }}</p>
+
+    <div class="multiplayer-options">
+        <div class="create-game">
+            <h3>{{ _('Create a New Game') }}</h3>
+            <p>{{ _('Start a new game and invite a friend to join you.') }}</p>
+            <button id="create-session-btn" class="big-button">
+                <i class="fas fa-plus-circle"></i> {{ _('Create New Game') }}
+            </button>
+            <div id="create-session-info" class="session-info"></div>
+        </div>
+
+        <div class="join-game">
+            <h3>{{ _('Join a Game') }}</h3>
+            <p>{{ _('Enter the game code your friend gave you to join their game.') }}</p>
+            <div id="join-session">
+                <input type="text" id="session-id-input" placeholder="{{ _('Enter Game Code') }}">
+                <button id="join-session-btn" class="big-button">
+                    <i class="fas fa-sign-in-alt"></i> {{ _('Join Game') }}
+                </button>
+            </div>
+            <div id="join-session-info" class="session-info"></div>
         </div>
     </div>
-    <div id="session-info"></div>
 </div>
 
 <script>
@@ -18,7 +34,11 @@ document.getElementById('create-session-btn').addEventListener('click', function
     fetch('/multiplayer/create_session', { method: 'POST' })
         .then(response => response.json())
         .then(data => {
-            document.getElementById('session-info').textContent = `{{ _('Session created! ID:') }} ${data.session_id}`;
+            document.getElementById('create-session-info').innerHTML = `
+                <p>{{ _('New game created!') }}</p>
+                <p>{{ _('Your game code is:') }} <strong>${data.session_id}</strong></p>
+                <p>{{ _('Share this code with your friend so they can join your game.') }}</p>
+            `;
         });
 });
 
@@ -34,9 +54,15 @@ document.getElementById('join-session-btn').addEventListener('click', function()
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            document.getElementById('session-info').textContent = `{{ _('Joined session:') }} ${data.session_id}`;
+            document.getElementById('join-session-info').innerHTML = `
+                <p>{{ _('You have joined the game!') }}</p>
+                <p>{{ _('Get ready to play!') }}</p>
+            `;
         } else {
-            document.getElementById('session-info').textContent = data.message;
+            document.getElementById('join-session-info').innerHTML = `
+                <p>{{ _('Oops! Could not join the game.') }}</p>
+                <p>{{ _('Please check the game code and try again.') }}</p>
+            `;
         }
     });
 });
