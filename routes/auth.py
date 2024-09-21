@@ -1,6 +1,6 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash
-from werkzeug.security import generate_password_hash, check_password_hash
-from flask_login import login_user, login_required, logout_user
+from flask import Blueprint, render_template, redirect, url_for, flash, request
+from flask_login import login_user, logout_user, login_required
+from urllib.parse import urlparse
 from flask_babel import _
 from app import db
 from models import User
@@ -14,17 +14,16 @@ def register():
         email = request.form.get('email')
         password = request.form.get('password')
         
-        user = User.query.filter_by(username=username).first()
-        if user:
+        if User.query.filter_by(username=username).first():
             flash(_('Oops! That superhero name is already taken. Try another one!'))
             return redirect(url_for('auth.register'))
         
-        new_user = User(username=username, email=email)
-        new_user.set_password(password)
-        db.session.add(new_user)
+        user = User(username=username, email=email)
+        user.set_password(password)
+        db.session.add(user)
         db.session.commit()
         
-        flash(_('Yay! You\'re now part of our Math Adventure. Let\'s play!'))
+        flash(_("Yay! You're now part of our Math Adventure. Let's play!"))
         return redirect(url_for('auth.login'))
     
     return render_template('register.html')
@@ -39,7 +38,11 @@ def login():
         if user and user.check_password(password):
             login_user(user)
             flash(_('Welcome back, Math Star! Ready for some fun?'))
-            return redirect(url_for('game.play'))
+            next_page = request.args.get('next')
+            if not next_page or urlparse(next_page).netloc != '':
+                next_page = url_for('game.play')
+            print(f"Debug: Redirecting to {next_page}")  # Add debug print
+            return redirect(next_page)
         else:
             flash(_('Oops! Your superhero name or secret code is not right. Try again!'))
     
