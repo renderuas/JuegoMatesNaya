@@ -10,7 +10,7 @@ function getProblem() {
     })
     .then(response => response.json())
     .then(data => {
-        console.log('Problem data:', data);  // Add this line for debugging
+        console.log('Problem data:', data);  // Keep this for debugging
         currentProblemId = data.id;
         document.getElementById('text-question').textContent = data.text_question;
         document.getElementById('numerical-question').textContent = data.numerical_question;
@@ -18,7 +18,11 @@ function getProblem() {
         document.getElementById('feedback').textContent = '';
         document.getElementById('next-btn').style.display = 'none';
     })
-    .catch(error => console.error('Error:', error));  // Add this line to catch any errors
+    .catch(error => {
+        console.error('Error fetching problem:', error);
+        document.getElementById('text-question').textContent = 'Error loading problem';
+        document.getElementById('numerical-question').textContent = '';
+    });
 }
 
 function checkAnswer() {
