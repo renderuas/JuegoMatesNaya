@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="dashboard-container">
+    <h2>{{ _('Progress Dashboard') }}</h2>
+    
+    <div class="dashboard-summary">
+        <h3>{{ _('Summary') }}</h3>
+        <p>{{ _('Total Problems Attempted:') }} {{ total_problems }}</p>
+        <p>{{ _('Correct Answers:') }} {{ correct_answers }}</p>
+        <p>{{ _('Accuracy:') }} {{ "%.2f"|format(accuracy) }}%</p>
+    </div>
+    
+    <div class="dashboard-difficulty">
+        <h3>{{ _('Difficulty Distribution') }}</h3>
+        <ul>
+        {% for difficulty, count in difficulty_distribution %}
+            <li>{{ _('Level') }} {{ difficulty }}: {{ count }} {{ _('problems') }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="dashboard-recent">
+        <h3>{{ _('Recent Progress') }}</h3>
+        <ul>
+        {% for progress in recent_progress %}
+            <li>
+                {{ progress.timestamp.strftime('%Y-%m-%d %H:%M') }} - 
+                {{ _('Problem') }} {{ progress.problem_id }}: 
+                {% if progress.is_correct %}
+                    <span class="correct">{{ _('Correct') }}</span>
+                {% else %}
+                    <span class="incorrect">{{ _('Incorrect') }}</span>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

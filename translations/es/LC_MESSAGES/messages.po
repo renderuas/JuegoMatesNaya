@@ -265,3 +265,43 @@ msgstr "Tiempo restante:"
 #: routes/multiplayer.py
 msgid "You are not part of this game session."
 msgstr "No eres parte de esta sesión de juego."
+
+# New translations for the dashboard
+msgid "Progress Dashboard"
+msgstr "Panel de Progreso"
+
+msgid "Summary"
+msgstr "Resumen"
+
+msgid "Total Problems Attempted:"
+msgstr "Total de Problemas Intentados:"
+
+msgid "Correct Answers:"
+msgstr "Respuestas Correctas:"
+
+msgid "Accuracy:"
+msgstr "Precisión:"
+
+msgid "Difficulty Distribution"
+msgstr "Distribución de Dificultad"
+
+msgid "Level"
+msgstr "Nivel"
+
+msgid "problems"
+msgstr "problemas"
+
+msgid "Recent Progress"
+msgstr "Progreso Reciente"
+
+msgid "Problem"
+msgstr "Problema"
+
+msgid "Correct"
+msgstr "Correcto"
+
+msgid "Incorrect"
+msgstr "Incorrecto"
+
+msgid "Dashboard"
+msgstr "Panel de Control"

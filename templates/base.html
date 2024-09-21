@@ -14,6 +14,7 @@
                 {% if current_user.is_authenticated %}
                     <li><a href="{{ url_for('game.play') }}">{{ _('Play Game') }}</a></li>
                     <li><a href="{{ url_for('multiplayer.multiplayer') }}">{{ _('Multiplayer') }}</a></li>
+                    <li><a href="{{ url_for('dashboard.dashboard') }}">{{ _('Dashboard') }}</a></li>
                     <li><a href="{{ url_for('auth.logout') }}">{{ _('Bye Bye') }}</a></li>
                 {% else %}
                     <li><a href="{{ url_for('auth.login') }}">{{ _('Come In') }}</a></li>

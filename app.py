@@ -24,11 +24,12 @@ from models import User
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-from routes import auth, game, api, multiplayer
+from routes import auth, game, api, multiplayer, dashboard
 app.register_blueprint(auth.bp)
 app.register_blueprint(game.bp)
 app.register_blueprint(api.bp)
 app.register_blueprint(multiplayer.bp)
+app.register_blueprint(dashboard.bp)
 
 @app.route('/')
 def index():

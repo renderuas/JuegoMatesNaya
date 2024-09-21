@@ -11,7 +11,7 @@ body {
     padding: 20px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #333;
 }
 
@@ -34,7 +34,7 @@ h1, h2 {
     margin-bottom: 10px;
 }
 
-.submit-btn {
+.submit-btn, .next-btn {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -44,7 +44,7 @@ h1, h2 {
     font-size: 18px;
 }
 
-.submit-btn:hover {
+.submit-btn:hover, .next-btn:hover {
     background-color: #45a049;
 }
 
@@ -65,4 +65,34 @@ h1, h2 {
     font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
+}
+
+/* Dashboard styles */
+.dashboard-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-summary, .dashboard-difficulty, .dashboard-recent {
+    margin-bottom: 30px;
+}
+
+.dashboard-recent ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard-recent li {
+    margin-bottom: 10px;
+}
+
+.dashboard-difficulty ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard-difficulty li {
+    margin-bottom: 5px;
 }
