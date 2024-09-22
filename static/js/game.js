@@ -12,11 +12,8 @@ function getProblem() {
     .then(data => {
         console.log('Problem data:', data);  // Keep this for debugging
         currentProblemId = data.id;
-        const questionElement = document.getElementById('question');
-        questionElement.innerHTML = `
-            <p>${data.text_question}</p>
-            <p>${data.numerical_question}</p>
-        `;
+        document.getElementById('text-question').textContent = data.text_question;
+        document.getElementById('numerical-question').textContent = data.numerical_question;
         document.getElementById('answer').value = '';
         document.getElementById('feedback').textContent = '';
         document.getElementById('submit-btn').style.display = 'inline-block';
@@ -24,7 +21,8 @@ function getProblem() {
     })
     .catch(error => {
         console.error('Error fetching problem:', error);
-        document.getElementById('question').textContent = 'Error loading problem';
+        document.getElementById('text-question').textContent = 'Error loading problem';
+        document.getElementById('numerical-question').textContent = '';
     });
 }
 

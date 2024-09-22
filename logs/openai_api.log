@@ -162,3 +162,12 @@ Respuesta: 7 manzanas
 
 Explicación: Si tenías 3 manzanas y agregaste 4 más a tu colección, simplemente debes sumar 3 + 4 para obtener el total. Por lo tanto, ahora tienes 7 manzanas.
 2024-09-22 08:17:33,543 - DEBUG - Parsed response - Question: Si tienes 3 manzanas y compras 4 más, ¿cuántas manzanas tienes ahora?, Answer: 7, Explanation: Si tenías 3 manzanas y agregaste 4 más a tu colección, simplemente debes sumar 3 + 4 para obtener el total. Por lo tanto, ahora tienes 7 manzanas.
+2024-09-22 08:25:18,496 - INFO - Generating math problem with difficulty: 1
+2024-09-22 08:25:18,497 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:25:22,733 - INFO - Received response from OpenAI API: Pregunta: Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?
+Respuesta: 7 manzanas
+Explicación: Empezamos con las 5 manzanas que ya tenía María. Si su mamá le da 2 más, los sumamos a los que ella ya tenía. Entonces, 5 manzanas + 2 manzanas es igual a 7 manzanas. Por lo tanto, María ahora tiene 7 manzanas.
+2024-09-22 08:25:22,733 - DEBUG - Parsed response - Question: Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?, Answer: 7, Explanation: Empezamos con las 5 manzanas que ya tenía María. Si su mamá le da 2 más, los sumamos a los que ella ya tenía. Entonces, 5 manzanas + 2 manzanas es igual a 7 manzanas. Por lo tanto, María ahora tiene 7 manzanas.
