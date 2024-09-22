@@ -13,5 +13,12 @@
     <div id="score" class="score">{{ _('Your Score:') }} <span id="score-value">0</span> 🏆</div>
 </div>
 
+<script>
+    const translations = {
+        awesome: "{{ _('Awesome!') }}",
+        oops: "{{ _('Oops!') }}",
+        tryAgain: "{{ _('Let\'s try again!') }}"
+    };
+</script>
 <script src="{{ url_for('static', filename='js/game.js') }}"></script>
 {% endblock %}

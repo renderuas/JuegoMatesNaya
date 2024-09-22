@@ -41,10 +41,10 @@ function checkAnswer() {
     .then(data => {
         const feedbackElement = document.getElementById('feedback');
         if (data.correct) {
-            feedbackElement.textContent = '{{ _("Awesome!") }} 🎉 ' + data.explanation;
+            feedbackElement.textContent = translations.awesome + ' 🎉 ' + data.explanation;
             feedbackElement.className = 'feedback correct celebrate';
         } else {
-            feedbackElement.textContent = '{{ _("Oops!") }} 😕 ' + data.explanation + ' {{ _("Let\'s try again!") }}';
+            feedbackElement.textContent = translations.oops + ' 😕 ' + data.explanation + ' ' + translations.tryAgain;
             feedbackElement.className = 'feedback incorrect';
         }
         document.getElementById('score-value').textContent = data.score;

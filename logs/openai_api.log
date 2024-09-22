@@ -193,3 +193,15 @@ Respuesta: 5 caramelos.
 
 Explicación: Primero, Juan recibe 4 caramelos de su amigo, así que ahora tiene 3 + 4 = 7 caramelos. Luego, Juan come 2 caramelos, así que le quedan 7 - 2 = 5 caramelos.
 2024-09-22 08:45:42,024 - DEBUG - Parsed response - Question: Si Juan tiene 3 caramelos y su amigo le da 4 caramelos más, pero luego Juan come 2 caramelos, ¿cuántos caramelos tiene Juan ahora?, Answer: 5, Explanation: Primero, Juan recibe 4 caramelos de su amigo, así que ahora tiene 3 + 4 = 7 caramelos. Luego, Juan come 2 caramelos, así que le quedan 7 - 2 = 5 caramelos.
+2024-09-22 08:47:29,051 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 08:47:29,051 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:47:32,847 - INFO - Received response from OpenAI API: Pregunta: Juan tiene 7 caramelos. Su amiga Ana le da 3 caramelos más. Pero después, a Juan se le caen y pierde 2 caramelos. ¿Cuántos caramelos tiene Juan ahora?
+
+Respuesta: 8 caramelos
+
+Explicación: Primero, a Juan le dan 3 caramelos, por lo que tiene un total de 7 + 3 = 10 caramelos. Luego, Juan pierde 2 caramelos, por lo que se le quedan 10 - 2 = 8 caramelos.
+2024-09-22 08:47:32,848 - DEBUG - Parsed response - Question: Juan tiene 7 caramelos. Su amiga Ana le da 3 caramelos más. Pero después, a Juan se le caen y pierde 2 caramelos. ¿Cuántos caramelos tiene Juan ahora?, Answer: 8, Explanation: Primero, a Juan le dan 3 caramelos, por lo que tiene un total de 7 + 3 = 10 caramelos. Luego, Juan pierde 2 caramelos, por lo que se le quedan 10 - 2 = 8 caramelos.
+2024-09-22 08:48:55,380 - INFO - Generating simple arithmetic problem with difficulty: 1
