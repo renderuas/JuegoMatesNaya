@@ -55,6 +55,8 @@ def generate_math_problem(difficulty):
         answer = lines[1].strip().split(': ')[-1]
         explanation = '\n'.join(lines[2:]).strip()
         
+        logger.info(f"Parsed response - Question: {question}, Answer: {answer}, Explanation: {explanation}")
+        
         return {
             'question': question,
             'answer': answer,

@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, request, jsonify
 from flask_login import login_required, current_user
 from app import db
 from models import MathProblem, UserProgress
-from services.math_service import generate_math_problem
+from services.openai_service import generate_math_problem
 import logging
 
 bp = Blueprint('game', __name__)
@@ -10,7 +10,7 @@ bp = Blueprint('game', __name__)
 @bp.route('/play')
 @login_required
 def play():
-    logging.debug(f"User {current_user.username} accessed /play route")  # Add debug logging
+    logging.debug(f"User {current_user.username} accessed /play route")
     return render_template('game.html')
 
 @bp.route('/get_problem', methods=['POST'])
@@ -20,7 +20,7 @@ def get_problem():
     problem = generate_math_problem(difficulty)
     
     new_problem = MathProblem(
-        question=problem['text_question'],
+        question=problem['question'],
         answer=problem['answer'],
         difficulty=difficulty,
         explanation=problem['explanation']
@@ -30,8 +30,8 @@ def get_problem():
     
     return jsonify({
         'id': new_problem.id,
-        'text_question': problem['text_question'],
-        'numerical_question': problem['numerical_question']
+        'text_question': problem['question'],
+        'numerical_question': problem['question']  # For now, we'll use the same question for both
     })
 
 @bp.route('/check_answer', methods=['POST'])
