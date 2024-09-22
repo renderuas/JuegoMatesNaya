@@ -16,3 +16,20 @@ Explicación en español: Este es un problema matemático simple de suma. Tenemo
 2024-09-22 07:55:57,150 - INFO - Parsed response - Question: Pregunta en español: Si Juan tiene 3 manzanas y luego su mamá le da 2 manzanas más, ¿cuántas manzanas tiene Juan en total?, Answer: , Explanation: Respuesta: Juan tiene 5 manzanas.
 
 Explicación en español: Este es un problema matemático simple de suma. Tenemos 3 manzanas al principio, y luego agregamos 2 manzanas más. Entonces, sumamos los números: 3 + 2 es igual a 5. Por lo tanto, Juan tiene 5 manzanas en total.
+2024-09-22 07:58:30,587 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish.
+2024-09-22 07:58:33,267 - INFO - Received response from OpenAI API: Problema matemático:
+
+Si tienes cinco manzanas y le das dos a tu amigo, ¿cuántas te quedan?
+
+Respuesta: 
+Te quedan tres manzanas. 
+
+Explicación:
+Si tenías cinco manzanas y le diste dos a tu amigo, debes restar dos de las cinco que tenías. Cuando restas dos de cinco (5-2), el resultado es tres. Entonces, te quedan tres manzanas.
+2024-09-22 07:58:33,267 - INFO - Parsed response - Question: Problema matemático:, Answer: , Explanation: Si tienes cinco manzanas y le das dos a tu amigo, ¿cuántas te quedan?
+
+Respuesta: 
+Te quedan tres manzanas. 
+
+Explicación:
+Si tenías cinco manzanas y le diste dos a tu amigo, debes restar dos de las cinco que tenías. Cuando restas dos de cinco (5-2), el resultado es tres. Entonces, te quedan tres manzanas.

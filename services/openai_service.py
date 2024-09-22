@@ -52,6 +52,8 @@ def generate_math_problem(difficulty):
         # Parse the response and extract question, answer, and explanation
         lines = content.split('\n')
         question = lines[0].strip()
+        if question.lower().startswith('problema matemático:'):
+            question = question.split(':', 1)[1].strip()
         answer = lines[1].strip().split(': ')[-1]
         explanation = '\n'.join(lines[2:]).strip()
         
@@ -63,7 +65,7 @@ def generate_math_problem(difficulty):
             'explanation': explanation
         }
     except Exception as e:
-        logger.error(f"Error generating math problem: {str(e)}")
+        logger.error(f"Error generating math problem: {str(e)}", exc_info=True)
         return {
             'question': f"Error al generar la pregunta (dificultad: {difficulty})",
             'answer': "N/A",
