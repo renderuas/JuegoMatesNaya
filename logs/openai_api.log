@@ -72,3 +72,11 @@ Respuesta: 2 más 3 es igual a 5
 
 Explicación Breve en Español: Cuando sumamos 2 y 3 juntos obtenemos 5. Esta es una suma básica, que es una operación matemática que combina números.
 2024-09-22 08:06:29,723 - INFO - Parsed response - Question: , Answer: 235, Explanation: 
+2024-09-22 08:08:30,834 - INFO - Generating math problem with difficulty: 1
+2024-09-22 08:08:30,834 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish.
+2024-09-22 08:08:35,937 - INFO - Received response from OpenAI API: Pregunta: Si tienes 5 manzanas y comes 2, ¿Cuántas manzanas te quedan?
+
+Respuesta: Te quedan 3 manzanas.
+
+Explicación: Comenzaste con 5 manzanas y luego te comiste 2. Si restas las 2 manzanas que te comiste de las 5 que tenías inicialmente, obtienes 3. O sea, 5 - 2 = 3. Por lo tanto, te quedan 3 manzanas.
+2024-09-22 08:08:35,937 - DEBUG - Parsed response - Question: , Answer: 3, Explanation: Explicación: Comenzaste con 5 manzanas y luego te comiste 2. Si restas las 2 manzanas que te comiste de las 5 que tenías inicialmente, obtienes 3. O sea, 5 - 2 = 3. Por lo tanto, te quedan 3 manzanas.

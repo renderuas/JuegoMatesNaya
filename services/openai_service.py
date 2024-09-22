@@ -34,7 +34,7 @@ def generate_math_problem(difficulty):
             'explanation': "La clave API no está configurada. Esto es un marcador de posición."
         }
 
-    prompt = f"Generate a math problem in Spanish for children with difficulty level {difficulty}. Include the question in Spanish, answer, and a brief explanation in Spanish."
+    prompt = f"Generate a math problem in Spanish for children with difficulty level {difficulty}. Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:\nPregunta: [question]\nRespuesta: [answer]\nExplicación: [explanation]"
     
     try:
         logger.info(f"Sending request to OpenAI API. Prompt: {prompt}")
@@ -52,10 +52,10 @@ def generate_math_problem(difficulty):
         
         # Parse the response and extract question, answer, and explanation
         lines = content.split('\n')
-        question = next((line.split(':', 1)[1].strip() for line in lines if line.lower().startswith('problema:')), '')
+        question = next((line.split(':', 1)[1].strip() for line in lines if line.lower().startswith('pregunta:')), '')
         answer = next((line.split(':', 1)[1].strip() for line in lines if line.lower().startswith('respuesta:')), '')
-        explanation = '\n'.join(line for line in lines if line.lower().startswith('explicación:'))
-        
+        explanation = '\n'.join(line.split(':', 1)[1].strip() for line in lines if line.lower().startswith('explicación:'))
+
         # Extract only the number from the answer
         answer = ''.join(filter(str.isdigit, answer))
         
