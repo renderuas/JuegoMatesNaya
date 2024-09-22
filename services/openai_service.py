@@ -21,7 +21,7 @@ handler = RotatingFileHandler(log_file, maxBytes=10*1024*1024, backupCount=5)
 handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 
 logger = logging.getLogger('openai_api')
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 logger.addHandler(handler)
 
 def generate_math_problem(difficulty):
@@ -59,7 +59,7 @@ def generate_math_problem(difficulty):
         # Extract only the number from the answer
         answer = ''.join(filter(str.isdigit, answer))
         
-        logger.info(f"Parsed response - Question: {question}, Answer: {answer}, Explanation: {explanation}")
+        logger.debug(f"Parsed response - Question: {question}, Answer: {answer}, Explanation: {explanation}")
         
         return {
             'question': question,

@@ -56,3 +56,19 @@ Explicación:
 
 Si José tenía 5 caramelos y su mamá le compró 3 más, sumamos 5 + 3 para obtener un total de 8 caramelos.
 Esto se resuelve con la operación matemática de suma sencilla.
+2024-09-22 08:05:52,307 - INFO - Generating math problem with difficulty: 1
+2024-09-22 08:05:52,307 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish.
+2024-09-22 08:05:55,954 - INFO - Received response from OpenAI API: Pregunta en español: Si Ana tiene 3 manzanas y Juan le da 2 manzanas más, ¿cuántas manzanas tiene Ana ahora?
+
+Respuesta: Ana tiene 5 manzanas.
+
+Explicación breve en español: Si Ana tiene 3 manzanas y se le añaden 2 manzanas más, se suman los dos números para obtener el total. Entonces, 3 manzanas + 2 manzanas es igual a 5 manzanas. Por lo tanto, Ana tiene 5 manzanas.
+2024-09-22 08:05:55,954 - INFO - Parsed response - Question: , Answer: 5, Explanation: 
+2024-09-22 08:06:25,721 - INFO - Generating math problem with difficulty: 1
+2024-09-22 08:06:25,721 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish.
+2024-09-22 08:06:29,723 - INFO - Received response from OpenAI API: Pregunta en Español: ¿Cuánto es 2 más 3?
+
+Respuesta: 2 más 3 es igual a 5
+
+Explicación Breve en Español: Cuando sumamos 2 y 3 juntos obtenemos 5. Esta es una suma básica, que es una operación matemática que combina números.
+2024-09-22 08:06:29,723 - INFO - Parsed response - Question: , Answer: 235, Explanation: 
