@@ -171,3 +171,25 @@ Explicación: [explanation]
 Respuesta: 7 manzanas
 Explicación: Empezamos con las 5 manzanas que ya tenía María. Si su mamá le da 2 más, los sumamos a los que ella ya tenía. Entonces, 5 manzanas + 2 manzanas es igual a 7 manzanas. Por lo tanto, María ahora tiene 7 manzanas.
 2024-09-22 08:25:22,733 - DEBUG - Parsed response - Question: Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?, Answer: 7, Explanation: Empezamos con las 5 manzanas que ya tenía María. Si su mamá le da 2 más, los sumamos a los que ella ya tenía. Entonces, 5 manzanas + 2 manzanas es igual a 7 manzanas. Por lo tanto, María ahora tiene 7 manzanas.
+2024-09-22 08:44:41,346 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 08:44:41,350 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:44:44,948 - INFO - Received response from OpenAI API: Pregunta: Si Juan tiene 3 perros y su padre le compra 2 perros más, pero Juan da 1 perro a su amigo, ¿cuántos perros tiene Juan ahora?
+Respuesta: Juan tiene 4 perros.
+Explicación: Juan tiene inicialmente 3 perros. Cuando su padre le compra 2 perros más, Juan tiene 5 perros. Pero Juan da 1 perro a su amigo, por lo que se resta 1 perro de los 5 que tenía. Por lo tanto, Juan tiene ahora 4 perros.
+2024-09-22 08:44:44,949 - DEBUG - Parsed response - Question: Si Juan tiene 3 perros y su padre le compra 2 perros más, pero Juan da 1 perro a su amigo, ¿cuántos perros tiene Juan ahora?, Answer: 4, Explanation: Juan tiene inicialmente 3 perros. Cuando su padre le compra 2 perros más, Juan tiene 5 perros. Pero Juan da 1 perro a su amigo, por lo que se resta 1 perro de los 5 que tenía. Por lo tanto, Juan tiene ahora 4 perros.
+2024-09-22 08:45:25,565 - INFO - Generating simple arithmetic problem with difficulty: 1
+2024-09-22 08:45:30,492 - INFO - Generating simple arithmetic problem with difficulty: 1
+2024-09-22 08:45:38,614 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 08:45:38,615 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:45:42,024 - INFO - Received response from OpenAI API: Pregunta: Si Juan tiene 3 caramelos y su amigo le da 4 caramelos más, pero luego Juan come 2 caramelos, ¿cuántos caramelos tiene Juan ahora?
+
+Respuesta: 5 caramelos.
+
+Explicación: Primero, Juan recibe 4 caramelos de su amigo, así que ahora tiene 3 + 4 = 7 caramelos. Luego, Juan come 2 caramelos, así que le quedan 7 - 2 = 5 caramelos.
+2024-09-22 08:45:42,024 - DEBUG - Parsed response - Question: Si Juan tiene 3 caramelos y su amigo le da 4 caramelos más, pero luego Juan come 2 caramelos, ¿cuántos caramelos tiene Juan ahora?, Answer: 5, Explanation: Primero, Juan recibe 4 caramelos de su amigo, así que ahora tiene 3 + 4 = 7 caramelos. Luego, Juan come 2 caramelos, así que le quedan 7 - 2 = 5 caramelos.
