@@ -41,7 +41,15 @@ def check_answer():
     user_answer = request.json.get('answer')
     
     problem = MathProblem.query.get(problem_id)
-    is_correct = str(user_answer) == problem.answer
+    
+    # Convert both answers to integers for comparison
+    try:
+        user_answer_int = int(user_answer)
+        correct_answer_int = int(problem.answer)
+        is_correct = user_answer_int == correct_answer_int
+    except ValueError:
+        # If conversion fails, fall back to string comparison
+        is_correct = str(user_answer).strip() == str(problem.answer).strip()
     
     progress = UserProgress(
         user_id=current_user.id,
