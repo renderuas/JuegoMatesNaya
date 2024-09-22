@@ -205,3 +205,118 @@ Respuesta: 8 caramelos
 Explicación: Primero, a Juan le dan 3 caramelos, por lo que tiene un total de 7 + 3 = 10 caramelos. Luego, Juan pierde 2 caramelos, por lo que se le quedan 10 - 2 = 8 caramelos.
 2024-09-22 08:47:32,848 - DEBUG - Parsed response - Question: Juan tiene 7 caramelos. Su amiga Ana le da 3 caramelos más. Pero después, a Juan se le caen y pierde 2 caramelos. ¿Cuántos caramelos tiene Juan ahora?, Answer: 8, Explanation: Primero, a Juan le dan 3 caramelos, por lo que tiene un total de 7 + 3 = 10 caramelos. Luego, Juan pierde 2 caramelos, por lo que se le quedan 10 - 2 = 8 caramelos.
 2024-09-22 08:48:55,380 - INFO - Generating simple arithmetic problem with difficulty: 1
+2024-09-22 08:49:08,303 - INFO - Generating simple arithmetic problem with difficulty: 1
+2024-09-22 08:49:22,637 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 08:49:22,637 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:49:26,652 - INFO - Received response from OpenAI API: Pregunta: Si Juan tiene 7 caramelos y su hermano le da 3 caramelos más, pero luego se come 2 caramelos, ¿cuántos caramelos tiene Juan ahora?
+
+Respuesta: 8 caramelos
+
+Explicación: Si Juan tenía inicialmente 7 caramelos y su hermano le dio 3 más, tendría un total de 7 + 3 = 10 caramelos. Pero, si luego se come 2 caramelos, le quedarían 10 - 2 = 8 caramelos. Por lo tanto, Juan tiene ahora 8 caramelos.
+2024-09-22 08:49:26,652 - DEBUG - Parsed response - Question: Si Juan tiene 7 caramelos y su hermano le da 3 caramelos más, pero luego se come 2 caramelos, ¿cuántos caramelos tiene Juan ahora?, Answer: 8, Explanation: Si Juan tenía inicialmente 7 caramelos y su hermano le dio 3 más, tendría un total de 7 + 3 = 10 caramelos. Pero, si luego se come 2 caramelos, le quedarían 10 - 2 = 8 caramelos. Por lo tanto, Juan tiene ahora 8 caramelos.
+2024-09-22 10:18:48,569 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 10:18:48,575 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 10:18:55,325 - INFO - Received response from OpenAI API: Pregunta: Si José tiene 10 caramelos y su hermano le da 3 caramelos más, pero después José come 4 caramelos, ¿cuántos caramelos tiene José ahora?
+Respuesta: 9 caramelos.
+Explicación: José inicialmente tenía 10 caramelos, y su hermano le dio 3 más, por lo que sumó 10 + 3 caramelos que da un total de 13 caramelos. Luego, José comió 4 caramelos, por lo que restó 13 - 4 caramelos. Así que José ahora tiene 9 caramelos.
+2024-09-22 10:18:55,325 - DEBUG - Parsed response - Question: Si José tiene 10 caramelos y su hermano le da 3 caramelos más, pero después José come 4 caramelos, ¿cuántos caramelos tiene José ahora?, Answer: 9, Explanation: José inicialmente tenía 10 caramelos, y su hermano le dio 3 más, por lo que sumó 10 + 3 caramelos que da un total de 13 caramelos. Luego, José comió 4 caramelos, por lo que restó 13 - 4 caramelos. Así que José ahora tiene 9 caramelos.
+2024-09-22 10:18:57,835 - INFO - Generating simple arithmetic problem with difficulty: 1
+2024-09-22 10:19:10,964 - INFO - Generating simple arithmetic problem with difficulty: 1
+2024-09-22 10:19:17,405 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 10:19:17,405 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 10:19:23,954 - INFO - Received response from OpenAI API: Pregunta: Roberto tiene 3 caramelos y su amigo le da 4 caramelos más. Luego, su mamá le quita 2 caramelos porque ya es hora de cenar. ¿Cuántos caramelos tiene Roberto ahora?
+
+Respuesta: 5 caramelos
+
+Explicación: Primero, sumamos los caramelos que Roberto tenía inicialmente (3) con los que le dio su amigo (4), lo cual nos da un total de 7 caramelos. Luego, restamos los 2 caramelos que le quitó su mamá. El resultado es 5 caramelos.
+2024-09-22 10:19:23,954 - DEBUG - Parsed response - Question: Roberto tiene 3 caramelos y su amigo le da 4 caramelos más. Luego, su mamá le quita 2 caramelos porque ya es hora de cenar. ¿Cuántos caramelos tiene Roberto ahora?, Answer: 5, Explanation: Primero, sumamos los caramelos que Roberto tenía inicialmente (3) con los que le dio su amigo (4), lo cual nos da un total de 7 caramelos. Luego, restamos los 2 caramelos que le quitó su mamá. El resultado es 5 caramelos.
+2024-09-22 10:19:50,809 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 10:19:50,809 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 10:19:54,926 - INFO - Received response from OpenAI API: Pregunta: Juan tiene 3 caramelos. Su hermana le da 4 caramelos más y luego Juan se come 2 caramelos. ¿Cuántos caramelos tiene Juan ahora?
+
+Respuesta: Juan tiene 5 caramelos.
+
+Explicación: Primero, sumamos los caramelos que Juan tenía originalmente y los que su hermana le dio, es decir, 3 + 4 = 7 caramelos. Luego, restamos los 2 caramelos que Juan se comió, 7 - 2 = 5. Por lo tanto, Juan ahora tiene 5 caramelos.
+2024-09-22 10:19:54,926 - DEBUG - Parsed response - Question: Juan tiene 3 caramelos. Su hermana le da 4 caramelos más y luego Juan se come 2 caramelos. ¿Cuántos caramelos tiene Juan ahora?, Answer: 5, Explanation: Primero, sumamos los caramelos que Juan tenía originalmente y los que su hermana le dio, es decir, 3 + 4 = 7 caramelos. Luego, restamos los 2 caramelos que Juan se comió, 7 - 2 = 5. Por lo tanto, Juan ahora tiene 5 caramelos.
+2024-09-22 10:20:06,261 - INFO - Generating simple arithmetic problem with difficulty: 1
+2024-09-22 11:29:35,714 - INFO - Generating simple arithmetic problem with difficulty: 1
+2024-09-22 11:30:11,687 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 11:30:11,688 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 11:30:14,902 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 11:30:14,902 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 11:30:17,019 - INFO - Received response from OpenAI API: Pregunta: Pedro tiene 3 caramelos y su amigo Luis le da 2 caramelos más. Más tarde, Pedro come 1 caramelo. ¿Cuántos caramelos le quedan a Pedro?
+
+Respuesta: 4 caramelos 
+
+Explicación: Al principio, Pedro tiene 3 caramelos. Cuando su amigo Luis le da 2 caramelos más, Pedro tiene ahora 3 + 2 = 5 caramelos. Pero luego, Pedro come 1 caramelo, por lo tanto, le quedan 5 - 1 = 4 caramelos.
+2024-09-22 11:30:17,020 - DEBUG - Parsed response - Question: Pedro tiene 3 caramelos y su amigo Luis le da 2 caramelos más. Más tarde, Pedro come 1 caramelo. ¿Cuántos caramelos le quedan a Pedro?, Answer: 4, Explanation: Al principio, Pedro tiene 3 caramelos. Cuando su amigo Luis le da 2 caramelos más, Pedro tiene ahora 3 + 2 = 5 caramelos. Pero luego, Pedro come 1 caramelo, por lo tanto, le quedan 5 - 1 = 4 caramelos.
+2024-09-22 11:30:19,309 - INFO - Received response from OpenAI API: Pregunta: Juan tiene 7 dulces y su amigo Luis le da 3 más. Luego, Juan come 2 dulces. ¿Cuántos dulces tiene Juan ahora?
+
+Respuesta: 8
+
+Explicación: Inicialmente, Juan tenía 7 dulces. Luis le da 3 más, entonces Juan tiene ahora 7 + 3 = 10 dulces. Pero, Juan come 2 dulces, entonces le quedan 10 - 2 = 8 dulces. Finalmente, Juan tiene 8 dulces.
+2024-09-22 11:30:19,310 - DEBUG - Parsed response - Question: Juan tiene 7 dulces y su amigo Luis le da 3 más. Luego, Juan come 2 dulces. ¿Cuántos dulces tiene Juan ahora?, Answer: 8, Explanation: Inicialmente, Juan tenía 7 dulces. Luis le da 3 más, entonces Juan tiene ahora 7 + 3 = 10 dulces. Pero, Juan come 2 dulces, entonces le quedan 10 - 2 = 8 dulces. Finalmente, Juan tiene 8 dulces.
+2024-09-22 11:32:27,656 - INFO - Generating simple arithmetic problem with difficulty: 1
+2024-09-22 11:33:01,205 - INFO - Generating simple arithmetic problem with difficulty: 1
+2024-09-22 11:33:37,658 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 11:33:37,658 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 11:33:44,260 - INFO - Received response from OpenAI API: Pregunta: Pedro tiene 3 cromos de fútbol. Su amigo Juan le regala 4 cromos más. Pero luego, Pedro pierde 2 cromos. ¿Cuántos cromos tiene ahora Pedro?
+
+Respuesta: 5 cromos.
+
+Explicación: Primero, sumamos los cromos que Pedro ya tenía con los que le regaló Juan, es decir, 3 + 4 es igual a 7 cromos. Luego, Pedro pierde 2 cromos, así que restamos esos 2 a los 7 que tenía. Entonces, 7 - 2 es igual a 5. Por lo tanto, ahora Pedro tiene 5 cromos.
+2024-09-22 11:33:44,260 - DEBUG - Parsed response - Question: Pedro tiene 3 cromos de fútbol. Su amigo Juan le regala 4 cromos más. Pero luego, Pedro pierde 2 cromos. ¿Cuántos cromos tiene ahora Pedro?, Answer: 5, Explanation: Primero, sumamos los cromos que Pedro ya tenía con los que le regaló Juan, es decir, 3 + 4 es igual a 7 cromos. Luego, Pedro pierde 2 cromos, así que restamos esos 2 a los 7 que tenía. Entonces, 7 - 2 es igual a 5. Por lo tanto, ahora Pedro tiene 5 cromos.
+2024-09-22 11:36:36,224 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 11:36:36,225 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 11:36:42,543 - INFO - Received response from OpenAI API: Pregunta: Pedro tiene 3 coches de juguete y su hermano le dio 4 coches más, luego, Pedro le da 2 coches a su amigo. ¿Cuántos coches de juguete tiene Pedro ahora?
+
+Respuesta: 5 coches.
+
+Explicación: Primero, sumamos los coches que Pedro tenía originalmente con los que su hermano le dio, lo que nos da un total de 7 coches (3+4). Después, restamos los 2 coches que Pedro le dio a su amigo, lo que nos da un total de 5 coches (7-2). Por lo tanto, Pedro tiene ahora 5 coches de juguete.
+2024-09-22 11:36:42,545 - DEBUG - Parsed response - Question: Pedro tiene 3 coches de juguete y su hermano le dio 4 coches más, luego, Pedro le da 2 coches a su amigo. ¿Cuántos coches de juguete tiene Pedro ahora?, Answer: 5, Explanation: Primero, sumamos los coches que Pedro tenía originalmente con los que su hermano le dio, lo que nos da un total de 7 coches (3+4). Después, restamos los 2 coches que Pedro le dio a su amigo, lo que nos da un total de 5 coches (7-2). Por lo tanto, Pedro tiene ahora 5 coches de juguete.
+2024-09-22 11:37:34,510 - INFO - Generating simple arithmetic problem with difficulty: 1
+2024-09-22 11:37:54,016 - INFO - Generating simple arithmetic problem with difficulty: 1
+2024-09-22 11:38:06,607 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 11:38:06,607 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 11:38:13,117 - INFO - Received response from OpenAI API: Pregunta: Si Juan tiene 7 caramelos y su amigo le da 3 caramelos más, pero luego Juan come 2 caramelos, ¿cuántos caramelos tiene Juan ahora?
+Respuesta: 8 caramelos
+Explicación: Primero, le sumamos a los 7 caramelos que tenía Juan los 3 caramelos que le dio su amigo, obteniendo un total de 10 caramelos. Pero luego Juan come 2 caramelos, así que le restamos esos 2 a los 10 caramelos, quedándonos con 8 caramelos.
+2024-09-22 11:38:13,117 - DEBUG - Parsed response - Question: Si Juan tiene 7 caramelos y su amigo le da 3 caramelos más, pero luego Juan come 2 caramelos, ¿cuántos caramelos tiene Juan ahora?, Answer: 8, Explanation: Primero, le sumamos a los 7 caramelos que tenía Juan los 3 caramelos que le dio su amigo, obteniendo un total de 10 caramelos. Pero luego Juan come 2 caramelos, así que le restamos esos 2 a los 10 caramelos, quedándonos con 8 caramelos.
+2024-09-22 11:38:53,944 - INFO - Generating story-based math problem with difficulty: 1
+2024-09-22 11:38:53,944 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. The problem should be a short story involving two arithmetic operations, similar to this example: 'Si María tiene 5 manzanas y su mamá le da 2 manzanas más, ¿cuántas manzanas tiene María ahora?' Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 11:38:58,944 - INFO - Received response from OpenAI API: Pregunta: Si Juan tiene 4 caramelos y su papá le da 3 caramelos más, pero luego Juan come 2 caramelos, ¿cuántos caramelos tiene Juan ahora?
+
+Respuesta: 5 caramelos
+
+Explicación: Primero, sumamos los caramelos que Juan tenía inicialmente y los que su papá le dio, es decir, 4 caramelos + 3 caramelos = 7 caramelos. Luego, restamos los caramelos que Juan comió, es decir, 7 caramelos - 2 caramelos = 5 caramelos. Juan ahora tiene 5 caramelos.
+2024-09-22 11:38:58,944 - DEBUG - Parsed response - Question: Si Juan tiene 4 caramelos y su papá le da 3 caramelos más, pero luego Juan come 2 caramelos, ¿cuántos caramelos tiene Juan ahora?, Answer: 5, Explanation: Primero, sumamos los caramelos que Juan tenía inicialmente y los que su papá le dio, es decir, 4 caramelos + 3 caramelos = 7 caramelos. Luego, restamos los caramelos que Juan comió, es decir, 7 caramelos - 2 caramelos = 5 caramelos. Juan ahora tiene 5 caramelos.
