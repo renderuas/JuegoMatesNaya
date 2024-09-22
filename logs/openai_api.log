@@ -109,3 +109,25 @@ Explicación: Comienzas con 5 manzanas. Luego, tu mamá te dio 3 manzanas adicio
 Respuesta: Juan tiene 8 manzanas.
 Explicación: Comenzamos con 5 manzanas que Juan ya tenía. Maria le da 3 manzanas más. Al sumar 5 + 3 obtenemos 8 manzanas en total. Por lo tanto, Juan tiene ahora 8 manzanas.
 2024-09-22 08:12:23,007 - DEBUG - Parsed response - Question: Si Juan tiene 5 manzanas y Maria le da 3 manzanas más, ¿cuántas manzanas tiene Juan ahora?, Answer: 8, Explanation: Comenzamos con 5 manzanas que Juan ya tenía. Maria le da 3 manzanas más. Al sumar 5 + 3 obtenemos 8 manzanas en total. Por lo tanto, Juan tiene ahora 8 manzanas.
+2024-09-22 08:14:07,403 - INFO - Generating math problem with difficulty: 1
+2024-09-22 08:14:07,403 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:14:11,425 - INFO - Received response from OpenAI API: Pregunta: Si tienes 5 manzanas y comes 2, ¿cuántas manzanas te quedan?
+
+Respuesta: 3 manzanas
+
+Explicación: Comenzaste con 5 manzanas y después te comiste 2. Entonces, debes restar 2 manzanas a las 5 manzanas iniciales. Así, 5 - 2 es igual a 3. Por lo tanto, te quedan 3 manzanas.
+2024-09-22 08:14:11,425 - DEBUG - Parsed response - Question: Si tienes 5 manzanas y comes 2, ¿cuántas manzanas te quedan?, Answer: 3, Explanation: Comenzaste con 5 manzanas y después te comiste 2. Entonces, debes restar 2 manzanas a las 5 manzanas iniciales. Así, 5 - 2 es igual a 3. Por lo tanto, te quedan 3 manzanas.
+2024-09-22 08:15:49,390 - INFO - Generating math problem with difficulty: 1
+2024-09-22 08:15:49,391 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:15:52,732 - INFO - Received response from OpenAI API: Pregunta: ¿Si tienes 3 manzanas y te doy 2 más, cuántas manzanas tienes ahora?
+
+Respuesta: 5 manzanas 
+
+Explicación: Si tenias 3 manzanas y luego recibes 2 manzanas más, debes sumar las manzanas. Es decir, 3 manzanas + 2 manzanas es igual a 5 manzanas.
+2024-09-22 08:15:52,732 - DEBUG - Parsed response - Question: ¿Si tienes 3 manzanas y te doy 2 más, cuántas manzanas tienes ahora?, Answer: 5, Explanation: Si tenias 3 manzanas y luego recibes 2 manzanas más, debes sumar las manzanas. Es decir, 3 manzanas + 2 manzanas es igual a 5 manzanas.
