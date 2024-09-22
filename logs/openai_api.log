@@ -131,3 +131,34 @@ Respuesta: 5 manzanas
 
 Explicación: Si tenias 3 manzanas y luego recibes 2 manzanas más, debes sumar las manzanas. Es decir, 3 manzanas + 2 manzanas es igual a 5 manzanas.
 2024-09-22 08:15:52,732 - DEBUG - Parsed response - Question: ¿Si tienes 3 manzanas y te doy 2 más, cuántas manzanas tienes ahora?, Answer: 5, Explanation: Si tenias 3 manzanas y luego recibes 2 manzanas más, debes sumar las manzanas. Es decir, 3 manzanas + 2 manzanas es igual a 5 manzanas.
+2024-09-22 08:16:06,261 - INFO - Generating math problem with difficulty: 1
+2024-09-22 08:16:06,261 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:16:11,482 - INFO - Received response from OpenAI API: Pregunta: Si tienes 5 manzanas y comes 2, ¿cuántas manzanas te quedan?
+
+Respuesta: 3
+
+Explicación: Comenzaste con 5 manzanas y luego comiste 2. Si restas las 2 manzanas que comiste de las 5 originales, te quedan 3 manzanas. Por lo tanto, la respuesta es 3.
+2024-09-22 08:16:11,482 - DEBUG - Parsed response - Question: Si tienes 5 manzanas y comes 2, ¿cuántas manzanas te quedan?, Answer: 3, Explanation: Comenzaste con 5 manzanas y luego comiste 2. Si restas las 2 manzanas que comiste de las 5 originales, te quedan 3 manzanas. Por lo tanto, la respuesta es 3.
+2024-09-22 08:16:48,998 - INFO - Generating math problem with difficulty: 1
+2024-09-22 08:16:48,999 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:16:51,266 - INFO - Received response from OpenAI API: Pregunta: ¿Cuánto es 2 más 2?
+Respuesta: 4
+Explicación: Si tienes dos manzanas y alguien te da dos manzanas más, entonces tendrás cuatro manzanas en total. Esto es lo que significa cuando decimos 2 más 2 es igual a 4.
+2024-09-22 08:16:51,266 - DEBUG - Parsed response - Question: ¿Cuánto es 2 más 2?, Answer: 4, Explanation: Si tienes dos manzanas y alguien te da dos manzanas más, entonces tendrás cuatro manzanas en total. Esto es lo que significa cuando decimos 2 más 2 es igual a 4.
+2024-09-22 08:17:29,458 - INFO - Generating math problem with difficulty: 1
+2024-09-22 08:17:29,458 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:17:33,543 - INFO - Received response from OpenAI API: Pregunta: Si tienes 3 manzanas y compras 4 más, ¿cuántas manzanas tienes ahora? 
+
+Respuesta: 7 manzanas 
+
+Explicación: Si tenías 3 manzanas y agregaste 4 más a tu colección, simplemente debes sumar 3 + 4 para obtener el total. Por lo tanto, ahora tienes 7 manzanas.
+2024-09-22 08:17:33,543 - DEBUG - Parsed response - Question: Si tienes 3 manzanas y compras 4 más, ¿cuántas manzanas tienes ahora?, Answer: 7, Explanation: Si tenías 3 manzanas y agregaste 4 más a tu colección, simplemente debes sumar 3 + 4 para obtener el total. Por lo tanto, ahora tienes 7 manzanas.

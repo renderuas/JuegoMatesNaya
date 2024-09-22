@@ -12,7 +12,11 @@ function getProblem() {
     .then(data => {
         console.log('Problem data:', data);  // Keep this for debugging
         currentProblemId = data.id;
-        document.getElementById('question').textContent = data.question;
+        const questionElement = document.getElementById('question');
+        questionElement.innerHTML = `
+            <p>${data.text_question}</p>
+            <p>${data.numerical_question}</p>
+        `;
         document.getElementById('answer').value = '';
         document.getElementById('feedback').textContent = '';
         document.getElementById('submit-btn').style.display = 'inline-block';
