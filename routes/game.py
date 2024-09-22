@@ -31,7 +31,7 @@ def get_problem():
     return jsonify({
         'id': new_problem.id,
         'text_question': problem['question'],
-        'numerical_question': problem['question']  # For now, we'll use the same question for both
+        'numerical_question': problem['question']  # This should be updated if we decide to format it differently
     })
 
 @bp.route('/check_answer', methods=['POST'])

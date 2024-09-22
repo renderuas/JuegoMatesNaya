@@ -28,12 +28,12 @@ def generate_math_problem(difficulty):
     if not openai_client:
         logger.warning("API key not set. Using placeholder problem.")
         return {
-            'question': f"Sample question (difficulty: {difficulty})",
-            'answer': "Sample answer",
-            'explanation': "API key not set. This is a placeholder."
+            'question': f"Pregunta de ejemplo (dificultad: {difficulty})",
+            'answer': "Respuesta de ejemplo",
+            'explanation': "La clave API no está configurada. Esto es un marcador de posición."
         }
 
-    prompt = f"Generate a math problem for children with difficulty level {difficulty}. Include the question, answer, and a brief explanation."
+    prompt = f"Generate a math problem in Spanish for children with difficulty level {difficulty}. Include the question in Spanish, answer, and a brief explanation in Spanish."
     
     try:
         logger.info(f"Sending request to OpenAI API. Prompt: {prompt}")
@@ -65,7 +65,7 @@ def generate_math_problem(difficulty):
     except Exception as e:
         logger.error(f"Error generating math problem: {str(e)}")
         return {
-            'question': f"Error generating question (difficulty: {difficulty})",
+            'question': f"Error al generar la pregunta (dificultad: {difficulty})",
             'answer': "N/A",
-            'explanation': "An error occurred while generating the problem."
+            'explanation': "Ocurrió un error al generar el problema."
         }
