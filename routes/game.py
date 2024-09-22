@@ -28,10 +28,13 @@ def get_problem():
     db.session.add(new_problem)
     db.session.commit()
     
+    # Create a numerical representation of the question
+    numerical_question = problem['question'].replace('más', '+').replace('menos', '-').replace('por', '×').replace('dividido entre', '÷')
+    
     return jsonify({
         'id': new_problem.id,
         'text_question': problem['question'],
-        'numerical_question': problem['question']  # For now, we'll use the same question for both
+        'numerical_question': numerical_question
     })
 
 @bp.route('/check_answer', methods=['POST'])

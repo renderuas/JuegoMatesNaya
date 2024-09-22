@@ -33,3 +33,26 @@ Te quedan tres manzanas.
 
 Explicación:
 Si tenías cinco manzanas y le diste dos a tu amigo, debes restar dos de las cinco que tenías. Cuando restas dos de cinco (5-2), el resultado es tres. Entonces, te quedan tres manzanas.
+2024-09-22 08:01:49,517 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish.
+2024-09-22 08:01:53,372 - INFO - Received response from OpenAI API: Problema:
+
+José tiene 5 caramelos y su madre le compra 3 caramelos más. ¿Cuántos caramelos tiene ahora José?
+
+Respuesta: 
+
+José tiene 8 caramelos. 
+
+Explicación:
+
+Si José tenía 5 caramelos y su mamá le compró 3 más, sumamos 5 + 3 para obtener un total de 8 caramelos.
+Esto se resuelve con la operación matemática de suma sencilla.
+2024-09-22 08:01:53,372 - INFO - Parsed response - Question: Problema:, Answer: , Explanation: José tiene 5 caramelos y su madre le compra 3 caramelos más. ¿Cuántos caramelos tiene ahora José?
+
+Respuesta: 
+
+José tiene 8 caramelos. 
+
+Explicación:
+
+Si José tenía 5 caramelos y su mamá le compró 3 más, sumamos 5 + 3 para obtener un total de 8 caramelos.
+Esto se resuelve con la operación matemática de suma sencilla.

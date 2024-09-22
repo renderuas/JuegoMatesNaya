@@ -25,11 +25,12 @@ logger.setLevel(logging.INFO)
 logger.addHandler(handler)
 
 def generate_math_problem(difficulty):
+    logger.info(f"Generating math problem with difficulty: {difficulty}")
     if not openai_client:
         logger.warning("API key not set. Using placeholder problem.")
         return {
             'question': f"Pregunta de ejemplo (dificultad: {difficulty})",
-            'answer': "Respuesta de ejemplo",
+            'answer': "42",
             'explanation': "La clave API no está configurada. Esto es un marcador de posición."
         }
 
@@ -51,11 +52,12 @@ def generate_math_problem(difficulty):
         
         # Parse the response and extract question, answer, and explanation
         lines = content.split('\n')
-        question = lines[0].strip()
-        if question.lower().startswith('problema matemático:'):
-            question = question.split(':', 1)[1].strip()
-        answer = lines[1].strip().split(': ')[-1]
-        explanation = '\n'.join(lines[2:]).strip()
+        question = next((line.split(':', 1)[1].strip() for line in lines if line.lower().startswith('problema:')), '')
+        answer = next((line.split(':', 1)[1].strip() for line in lines if line.lower().startswith('respuesta:')), '')
+        explanation = '\n'.join(line for line in lines if line.lower().startswith('explicación:'))
+        
+        # Extract only the number from the answer
+        answer = ''.join(filter(str.isdigit, answer))
         
         logger.info(f"Parsed response - Question: {question}, Answer: {answer}, Explanation: {explanation}")
         
@@ -68,6 +70,6 @@ def generate_math_problem(difficulty):
         logger.error(f"Error generating math problem: {str(e)}", exc_info=True)
         return {
             'question': f"Error al generar la pregunta (dificultad: {difficulty})",
-            'answer': "N/A",
+            'answer': "0",
             'explanation': "Ocurrió un error al generar el problema."
         }
