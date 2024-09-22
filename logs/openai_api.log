@@ -80,3 +80,32 @@ Respuesta: Te quedan 3 manzanas.
 
 Explicación: Comenzaste con 5 manzanas y luego te comiste 2. Si restas las 2 manzanas que te comiste de las 5 que tenías inicialmente, obtienes 3. O sea, 5 - 2 = 3. Por lo tanto, te quedan 3 manzanas.
 2024-09-22 08:08:35,937 - DEBUG - Parsed response - Question: , Answer: 3, Explanation: Explicación: Comenzaste con 5 manzanas y luego te comiste 2. Si restas las 2 manzanas que te comiste de las 5 que tenías inicialmente, obtienes 3. O sea, 5 - 2 = 3. Por lo tanto, te quedan 3 manzanas.
+2024-09-22 08:11:30,687 - INFO - Generating math problem with difficulty: 1
+2024-09-22 08:11:30,688 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:11:34,421 - INFO - Received response from OpenAI API: Pregunta: Si tienes 5 manzanas y comes 2, ¿cuántas manzanas te quedan?
+Respuesta: 3 manzanas
+Explicación: Comenzaste con 5 manzanas y comiste 2. Entonces, 5 menos 2 es igual a 3. Por lo tanto, te quedan 3 manzanas.
+2024-09-22 08:11:34,421 - DEBUG - Parsed response - Question: Si tienes 5 manzanas y comes 2, ¿cuántas manzanas te quedan?, Answer: 3, Explanation: Comenzaste con 5 manzanas y comiste 2. Entonces, 5 menos 2 es igual a 3. Por lo tanto, te quedan 3 manzanas.
+2024-09-22 08:12:13,728 - INFO - Generating math problem with difficulty: 1
+2024-09-22 08:12:13,728 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:12:18,452 - INFO - Generating math problem with difficulty: 1
+2024-09-22 08:12:18,452 - INFO - Sending request to OpenAI API. Prompt: Generate a math problem in Spanish for children with difficulty level 1. Include the question in Spanish, answer, and a brief explanation in Spanish. Format the response as follows:
+Pregunta: [question]
+Respuesta: [answer]
+Explicación: [explanation]
+2024-09-22 08:12:18,711 - INFO - Received response from OpenAI API: Pregunta: Si tienes 5 manzanas y tu mamá te da 3 manzanas más, ¿cuántas manzanas tienes en total?
+
+Respuesta: 8 manzanas.
+
+Explicación: Comienzas con 5 manzanas. Luego, tu mamá te dio 3 manzanas adicionales. Cuando sumas 5 manzanas con las 3 manzanas, obtienes un total de 8 manzanas. Por lo tanto, tienes 8 manzanas en total.
+2024-09-22 08:12:18,711 - DEBUG - Parsed response - Question: Si tienes 5 manzanas y tu mamá te da 3 manzanas más, ¿cuántas manzanas tienes en total?, Answer: 8, Explanation: Comienzas con 5 manzanas. Luego, tu mamá te dio 3 manzanas adicionales. Cuando sumas 5 manzanas con las 3 manzanas, obtienes un total de 8 manzanas. Por lo tanto, tienes 8 manzanas en total.
+2024-09-22 08:12:23,007 - INFO - Received response from OpenAI API: Pregunta: Si Juan tiene 5 manzanas y Maria le da 3 manzanas más, ¿cuántas manzanas tiene Juan ahora?
+Respuesta: Juan tiene 8 manzanas.
+Explicación: Comenzamos con 5 manzanas que Juan ya tenía. Maria le da 3 manzanas más. Al sumar 5 + 3 obtenemos 8 manzanas en total. Por lo tanto, Juan tiene ahora 8 manzanas.
+2024-09-22 08:12:23,007 - DEBUG - Parsed response - Question: Si Juan tiene 5 manzanas y Maria le da 3 manzanas más, ¿cuántas manzanas tiene Juan ahora?, Answer: 8, Explanation: Comenzamos con 5 manzanas que Juan ya tenía. Maria le da 3 manzanas más. Al sumar 5 + 3 obtenemos 8 manzanas en total. Por lo tanto, Juan tiene ahora 8 manzanas.
