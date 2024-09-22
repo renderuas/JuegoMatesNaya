@@ -1,7 +1,12 @@
 from flask_babel import _
 import random
 
+problem_counter = 0
+
 def generate_math_problem(difficulty):
+    global problem_counter
+    problem_counter += 1
+
     if difficulty == 1:
         num1 = random.randint(1, 10)
         num2 = random.randint(1, 10)
@@ -36,9 +41,16 @@ def generate_math_problem(difficulty):
         text_question = _("What is %(num1)s divided by %(num2)s?") % {'num1': num1, 'num2': num2}
         numerical_question = f"{num1} ÷ {num2} = ?"
 
+    # Alternate between text and numerical questions every two problems
+    if problem_counter % 4 < 2:
+        question = text_question
+    else:
+        question = numerical_question
+
     return {
         'text_question': text_question,
         'numerical_question': numerical_question,
+        'question': question,
         'answer': str(answer),
         'explanation': get_explanation(num1, num2, operator, answer)
     }

@@ -18,7 +18,7 @@ def get_problem():
     problem = generate_math_problem(difficulty)
     
     new_problem = MathProblem(
-        question=problem['text_question'],
+        question=problem['question'],
         answer=problem['answer'],
         difficulty=difficulty,
         explanation=problem['explanation']
@@ -28,8 +28,7 @@ def get_problem():
     
     return jsonify({
         'id': new_problem.id,
-        'text_question': problem['text_question'],
-        'numerical_question': problem['numerical_question']
+        'question': problem['question']
     })
 
 @bp.route('/check_answer', methods=['POST'])
